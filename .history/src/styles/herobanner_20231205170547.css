@@ -1,0 +1,9 @@
+.herobanner-container{
+    display: flex;
+    width:100vw;
+    flex-direction: column;
+}
+
+.herobanner-logo{
+    width:300px
+}

@@ -1,0 +1,20 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+ 
+  text-align: center;
+}
+
+:root{
+  --primary-color:rgb(48, 46, 99);
+}
+
+.layout{
+  margin-top: 3rem;
+
+}
+
+
+
+
+

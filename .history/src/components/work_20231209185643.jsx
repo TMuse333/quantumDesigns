@@ -1,0 +1,40 @@
+import React from 'react';
+// import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import abu from '../images/aboubacar-5-fire.png'
+import abu2 from '../images/aboubacar-6.jpg'
+import vegeta from '../images/vegeta-battle.png'
+import majinVegeta from '../images/majin-vegeta.png'
+
+const WorkCarousel = () => {
+  const settings = {
+    // Configure the settings for your carousel
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+  };
+
+  const style = {
+    width:'300px'
+  }
+
+  return (
+    <Slider {...settings}>
+     <img src={abu}
+     style={style}
+     />
+      <div>
+        <img src="work1.jpg" alt="Work 1" />
+      </div>
+      <div>
+        <img src="work2.jpg" alt="Work 2" />
+      </div>
+      {/* Add more slides as needed */}
+    </Slider>
+  );
+};
+
+export default WorkCarousel;

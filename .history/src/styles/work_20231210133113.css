@@ -1,0 +1,37 @@
+
+
+.image-gallery {
+    width:400px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+    
+}
+
+.image-gallery-image img{
+    width:50px;
+}
+
+.image-gallery-slide .image-gallery-image{
+    width:300px
+}
+
+.image-gallery-slide .image-gallery-description{
+    /* margin-left: 3rem;
+    transform: translateY(6rem); */
+}
+
+
+.image-gallery-description {
+    position: relative;
+    margin-left: auto;
+   
+    /* width: 80%; */
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    /* margin-left: 3rem; */
+    /* box-sizing: border-box; */
+    
+   
+  }

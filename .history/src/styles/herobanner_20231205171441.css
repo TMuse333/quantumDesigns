@@ -1,0 +1,12 @@
+.herobanner-container{
+    display: flex;
+    width:100vw;
+    flex-direction: column;
+    background-color: var( --primary-color);
+   
+    margin-top: auto;
+}
+
+.herobanner-logo{
+    width:300px
+}

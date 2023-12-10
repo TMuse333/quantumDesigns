@@ -1,0 +1,7 @@
+.intro-container{
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    margin-bottom: -1rem;
+}

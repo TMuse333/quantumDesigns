@@ -1,0 +1,25 @@
+.custom-carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Adjust as needed */
+    margin: 0 auto;
+  }
+  
+  .carousel-image {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd; /* Optional: Add a border for visual separation */
+    border-radius: 8px; /* Optional: Add border-radius for rounded corners */
+  }
+  
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  

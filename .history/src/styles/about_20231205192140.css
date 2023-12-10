@@ -1,0 +1,13 @@
+.about-container{
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+}
+
+.about-container h2{
+    background-color: var(--tag-color);
+    padding-left: 20px;
+    width:80vw;
+    text-align: center;
+}

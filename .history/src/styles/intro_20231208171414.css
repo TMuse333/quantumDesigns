@@ -1,0 +1,35 @@
+.intro-container{
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    
+}
+
+.intro-container p{
+    font-family: 'Aileron', sans-serif;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid #00bfff; /* Quantum blue color */
+    color: #00bfff;
+    background-color: transparent;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width:max-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+}
+
+.button:hover {
+    background-color: #00bfff; /* Quantum blue color on hover */
+    color: #fff; /* White text on hover */
+}
