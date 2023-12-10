@@ -1,0 +1,29 @@
+.intro-container{
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    
+}
+
+.intro {
+    width:100vw;
+    font-weight: 400;
+    font-size: 35px;
+    
+}
+
+.bold-700{
+    font-weight: 700;
+}
+
+
+
+
+
+.intro-container p{
+  
+}
+
+
+

@@ -1,0 +1,25 @@
+.testimonial-container{
+    width:100vw;
+    background-color: var(--primary-color);
+    margin-top: -2.5rem;
+}
+
+.testimonial {
+    background-color: black;
+    padding:10px;
+
+}
+
+.quote{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.effect{
+    font-weight: 500;
+    font-family: 'spartan',sans-serif;
+}
+
+.author {
+    font-weight: ;
+}

@@ -1,0 +1,30 @@
+.work-container{
+    width: 100vw;
+    background-color: var(--primary-color);
+    margin-top: -2rem;
+ 
+}
+
+.image-gallery {
+    /* width:400px; */
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+    
+}
+
+
+
+.image-gallery-slide .image-gallery-image{
+   
+    height:400px;
+}
+
+.work-button{
+    margin-bottom: 25px;
+}
+
+
+
+
+
