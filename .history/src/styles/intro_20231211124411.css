@@ -1,0 +1,36 @@
+.intro-container{
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    
+}
+
+.intro {
+    width:100vw;
+    font-weight: 350;
+    font-size: 35px;
+    margin-bottom: 0.1rem;
+    
+}
+
+.bold-700{
+    font-weight: 700;
+}
+
+.intro-end{
+    padding:0 10px 0 10px;
+    font-weight: 500;
+    
+}
+
+
+
+
+
+.intro-container p{
+  
+}
+
+
+

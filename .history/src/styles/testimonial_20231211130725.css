@@ -1,0 +1,58 @@
+.testimonial-container{
+    width:98vw;
+    background-color: var(--primary-color);
+  margin-top:auto;
+    /* position: relative; */
+    /* border: 2px solid white; */
+}
+
+.testimonial {
+    background-color: black;
+    padding-left: 1rem;
+    text-align: left;
+    padding-bottom: 40px;
+    width:80vw;
+   display: flex;
+   flex-direction: column;
+   margin-left: auto;
+   margin-right: auto;
+
+}
+
+.quote{
+  
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.effect{
+    font-weight: 500;
+    font-family: 'spartan',sans-serif;
+    font-size: 20px;
+}
+
+.author {
+    margin-top: 2rem;
+    font-weight: bold;
+    font-size:20px;
+}
+
+.title{
+    margin-top: -1rem;
+    font-size:20px;
+}
+
+.arrow-container{
+    display: flex;
+}
+
+.arrow{
+    position: absolute;
+    top:50%;
+    font-size: 40px;
+}
+
+.arrow-right{
+    right:0;
+}
+
