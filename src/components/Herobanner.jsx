@@ -1,6 +1,7 @@
 import React from "react";
 import logo from '../images/quantum nation.jpeg'
 import '../styles/herobanner.css'
+import { motion, AnimatePresence } from "framer-motion";
 
 const Herobanner = () => {
 
@@ -11,10 +12,37 @@ const Herobanner = () => {
 
     return (
         <div className="herobanner-container">
-            <img className="herobanner-logo"
-            src={logo}/>
-            <h1>Pure Visuals</h1>
-           <p className="description-text">Unleashing Creativity with Scientific Precision.</p>
+            <AnimatePresence mode='wait'>
+
+         
+            <motion.img className="herobanner-logo"
+            src={logo}
+            style={{
+            width:'250px'}}
+            initial={{ opacity: 1, scale:0, y:-100 }}
+            animate={{ opacity: 1, scale:1, y:0, transition: {delay: 0.2,duration:0.5}  }}
+              exit={{ opacity: 0 }}       
+                           />
+         </AnimatePresence>
+         <AnimatePresence>
+         <motion.h1
+         initial={{ opacity: 0, x:-250 }}
+         animate={{ opacity: 1, scale:1, x:0, transition: { delay: 0.4, duration:0.5 }}}
+           exit={{ opacity: 0 }} 
+           >Q3 Visuals</motion.h1>
+         </AnimatePresence>
+         
+           <AnimatePresence>
+            
+           <motion.p className="description-text"
+            initial={{ opacity: 0, }}
+            animate={{ opacity: 1, scale:1, transition: { delay: 1 ,
+            duration:0.8} }}
+              exit={{ opacity: 0 }} 
+           >Unleashing Creativity with Scientific Precision.</motion.p>
+           </AnimatePresence>
+         
+   
             
         </div>
     )

@@ -7,16 +7,23 @@ const Footer = () => {
     <footer>
       <div className="footer-container">
         <div className="contact-info">
-          <p>Email: info@quantumdesigns.com</p>
-          <p>Phone: (123) 456-7890</p>
-          <p>123 Quantum Street, Cityville, QD 56789</p>
+          <p>Email: Q3Designs@gmail.com</p>
+          <p>Phone: (902) 999-1006</p>
         </div>
+        
        
         <div className="quick-links">
-          <Link to="/">Home</Link>
-          <Link to="/services">Services</Link>
-          <Link to="/portfolio">Portfolio</Link>
-          <Link to="/contact">Contact</Link>
+          <Link to="/"
+          className='link'
+          >Home
+          </Link>
+          <Link to="/services"
+          className='link'>Services</Link>
+          <Link to="/portfolio"
+          className='link'>Portfolio</Link>
+          <Link to="/contact"
+          className='link'>Contact
+          </Link>
         </div>
    
        

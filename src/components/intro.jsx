@@ -1,6 +1,7 @@
 import React from "react";
 import Skills from "./tenets";
 import '../styles/intro.css'
+import { motion, AnimatePresence } from "framer-motion";
 
 
 const Intro = () => {
@@ -12,19 +13,31 @@ const Intro = () => {
 
     return (
         <div className="intro-container">
-            {/* <p className="before-title-text">Welcome to Quantum visual designs</p> */}
-            <h2 className="title-text intro"
-            >
-                 Great <span className="bold-700">Websites</span> are <span className="bold-700">Essential</span>
-            </h2>
-            <p className="description-text"
-            >
-            Having a <span className="bold-700">strong</span> online presence today is a <span className="bold-700">non negotiable</span> if 
-            you want to be competitive and grow your brand. Here at Quantum Visuals
-            we use creative designs and scientific methods to give you that competitive
-            advantage you need to succeed. 
+         
+         <AnimatePresence>
+            <motion.h2 className="title-text intro"
+            initial={{ opacity: 0, x:-100 }}
+            animate={{ opacity: 1,  x:0, transition: {delay: 0.7,duration:0.5}  }}
+            exit={{ opacity: 1 }}
+            > Great <motion.span className="bold-700">Websites</motion.span> are <motion.span className="bold-700">Essential</motion.span>
+            </motion.h2>
 
-            </p>
+            </AnimatePresence>
+
+        <AnimatePresence>
+
+            <motion.p className="description-text"
+              initial={{ opacity: 0,  }}
+              animate={{ opacity: 1, scale:1, transition: { delay: 1.4, duration:0.5 }}}
+                exit={{ opacity: 0 }} 
+            
+            >
+            Having a <motion.span className="bold-700">strong</motion.span> online presence today is a <motion.span className="bold-700">non negotiable</motion.span> if 
+            you want to be competitive and grow your brand. Here at Q3 Visuals
+            we use creative designs and scientific methods to give you that competitive
+            advantage you need to succeed.
+            </motion.p>
+            </AnimatePresence>
           <h2 className="intro-end">
           Quantum Visuals will you turn your
             vision into digital reality.

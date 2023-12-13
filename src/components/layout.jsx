@@ -17,7 +17,7 @@ const Layout = () => {
 
     return (
         <div className="layout">
-            <Navbar/>
+       <Navbar/>    
  <Herobanner/>
  <Intro/>
  <Tenets/>

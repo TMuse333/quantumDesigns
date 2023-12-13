@@ -22,7 +22,7 @@ const Tenets = () => {
 
       <img src={davinci}
       style={{
-        width:'400px'
+        width:'250px'
       }}/>
 <p className='description-text'>
     With so much content on the web today, standing out is crucial. We have formulated a unique process
