@@ -1,0 +1,36 @@
+.herobanner-container{
+    display: flex;
+    width:100vw;
+    flex-direction: column;
+    background-color: var( --primary-color);
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -15rem;
+    
+}
+
+.herobanner-logo{
+    /* margin-top: 3rem; */
+    width:300px;
+    padding-top: 30px;
+}
+
+.herobanner-container h1{
+    margin-top: -1rem;
+    font-family: 'Noto Sans Linear A', sans-serif;
+    font-size: 60px;
+    
+}
+
+.herobanner-container p{
+    margin-top: -1rem;
+    font-size: 25px;
+    /* font-family: 'Open Sans', sans-serif; */
+    
+}
+
+.arrow {
+    /* font-size: px; */
+}

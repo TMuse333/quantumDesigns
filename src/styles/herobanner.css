@@ -12,18 +12,26 @@
 }
 
 .herobanner-logo{
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
     width:300px;
     padding-top: 30px;
 }
 
 .herobanner-container h1{
+    margin-top: -1rem;
     font-family: 'Noto Sans Linear A', sans-serif;
+    font-size: 60px;
     
 }
 
 .herobanner-container p{
     margin-top: -1rem;
+    font-size: 25px;
     /* font-family: 'Open Sans', sans-serif; */
     
+}
+
+.arrow-down {
+    margin-top: -1rem;
+    font-size: 50px;
 }
