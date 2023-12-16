@@ -1,0 +1,26 @@
+.footer-container {
+    background-color: var(--primary-color);
+    padding-top: 20px;
+    width:100vw;
+    /* border:1px solid white; */
+  
+}
+
+.quick-links{
+
+    display: flex;
+    justify-content: space-around;
+    font-family: 'spartan',sans-serif;
+ 
+   
+
+}
+
+.link {
+
+    color:rgb(87, 181, 253);
+    padding-bottom: 30px;
+    font-family: 'spartan',sans-serif;
+
+}
+

@@ -1,0 +1,13 @@
+.outro-container{
+    background-color:var(--primary-color) ;
+    width:99.5vw;
+    border:1px solid white;
+    padding-top: 10px;
+   
+}
+
+.outro-title{
+    font-size: 28px;
+    font-weight: 600;
+    
+}

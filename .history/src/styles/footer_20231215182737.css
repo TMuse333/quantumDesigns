@@ -1,0 +1,22 @@
+.footer-container {
+    background-color: var(--primary-color);
+    padding-top: 20px;
+    width:98vw;
+    border:2px solid white;
+    padding-bottom: 10px;
+}
+
+.quick-links{
+
+    display: flex;
+    justify-content: space-around;
+   
+
+}
+
+.link {
+
+    color:rgb(87, 181, 253);
+
+}
+
