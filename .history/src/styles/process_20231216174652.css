@@ -1,0 +1,8 @@
+.process-container{
+    width:100vw;
+    background-color: var(--primary-color);
+    position:absolute;
+    top:0;
+    left:0
+}
+
