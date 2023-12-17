@@ -1,0 +1,68 @@
+.process-container{
+    width:100vw;
+    background-color: var(--primary-color);
+    position:absolute;
+    top:50px;
+    left:0;
+
+}
+
+.points{
+    position: relative;
+      top:calc(50% + 15px)
+}
+
+.points li {
+    list-style: none;
+    margin-top: 1rem;
+    text-align: left;
+ font-family: 'spartan',sans-serif;
+}
+
+.tenet-title{
+      position: absolute;
+      top:0px;
+     
+}
+
+.tenet-desc{
+    position: absolute;
+    top:45px;
+    font-size: 1.25rem;
+    padding-left:15px;
+    padding-right: 15px;
+    
+
+}
+
+.tenet{
+   background-color: rgb(21, 28, 35);
+   position: relative;
+   height:450px;
+   width:100vw
+}
+
+.video-container{
+    width:100vw;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.video-placeholder{
+    background-color: black;
+    height:200px;
+    width:90vw;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+}
+
+.video-container p {
+      margin
+}
+
