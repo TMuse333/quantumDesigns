@@ -1,0 +1,79 @@
+import React, { useState, useRef } from 'react';
+import '../styles/booking.css';
+import emailjs from '@emailjs/browser';
+import Navbar from './navbar';
+
+const Booking = () => {
+  const [submitted, setSubmitted] = useState(false);
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    const serviceId = 'service_32u1f5x';
+    const templateId = 'template_ubgz5ef';
+    const userId = 'CN_-9JmkFRgjxgmrg';
+
+    emailjs
+      .sendForm(serviceId, templateId, form.current, userId)
+      .then((result) => {
+        console.log(result.text);
+        setSubmitted(true);
+      })
+      .catch((error) => {
+        console.log(error.text);
+      });
+  };
+
+  return (
+    <div className='booking-container'>
+      <Navbar />
+
+      <h1 className='title-text booking-title'>
+        Elevate your digital presence today
+      </h1>
+      {submitted ? (
+        <div>
+        <p className='description-text'>
+          Thank you for your service! We'll get in touch with you shortly.
+        </p>
+        <button className='button'>
+
+        </button>
+        </div>
+      ) : (
+        <>
+          <p className='description-text booking-p'>
+            Let's get in contact so we can build your awesome website
+          </p>
+          <form onSubmit={sendEmail} ref={form}>
+            <div className='info-box-container'>
+              <input type='email' placeholder='Email' name='user_email' />
+              <input type='text' placeholder='First Name' name='first_Name' />
+              <input type='text' placeholder='Last Name' name='last_Name' />
+              <input
+                type='text'
+                placeholder='Company name (if applicable)'
+                name='company_Name'
+              />
+              <input type='text' placeholder='Phone number' name='phone_Number' />
+              <input type='text' placeholder='Project details' name='project_Details' />
+            </div>
+
+            <p className='description-text'>
+              The laws of physics state that for every action, there is an equal and
+              opposite reaction. Use this law every day to create the reality you
+              want.
+            </p>
+
+            <button className='button' type='submit'>
+              Submit request
+            </button>
+          </form>
+        </>
+      )}
+    </div>
+  );
+};
+
+export default Booking;
