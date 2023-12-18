@@ -34,11 +34,8 @@ const WorkCarousel = () => {
 
     <h2 className="title-text bold-700">Creating digital excellence.</h2>
 <p className="description-text">Creating digital excellence with every pixel and line of code. Here is some of our work</p>
-<Link to='/portfolio'>
-
-
+<Link
 <button className="button work-button">explore portfolio</button>
-</Link>
 
    
     <ImageGallery items={img} showThumbnails={false}

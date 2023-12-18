@@ -16,7 +16,6 @@ import {
 import Process from './components/process'
 import Booking from './components/booking'
 import About from './components/about'
-import Portfolio from './components/portfolio'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -40,7 +39,7 @@ function App() {
 
       <Route path='about' element={<About/>}></Route>
 
-      <Route path='portfolio' element={<Portfolio/>}></Route>
+      <Route path='portfolio'
 
    
     </Routes>

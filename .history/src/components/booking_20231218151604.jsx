@@ -36,9 +36,7 @@ const Booking = () => {
     }
   }, [submitted]);
 
-  useEffect(() =>{
-    window.scrollTo(0,0)
-  })
+  
 
   return (
     <div className='booking-container'>
@@ -47,7 +45,9 @@ const Booking = () => {
         style={{height:'30vh'}}
         />
         <p className='correct'>
-          You have made an <span className='bold-700'>excellent </span> choice 
+            You have made the 
+                right            choice
+ 
         </p>
       <h1 className='title-text booking-title'>
         <span className='bold-700'>Elevate</span> your digital presence today

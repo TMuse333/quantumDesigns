@@ -40,7 +40,7 @@ function App() {
 
       <Route path='about' element={<About/>}></Route>
 
-      <Route path='portfolio' element={<Portfolio/>}></Route>
+      <Route path='portfolio' element={<Portfolio/>}
 
    
     </Routes>

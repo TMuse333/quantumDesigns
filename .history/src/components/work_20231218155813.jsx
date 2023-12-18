@@ -5,7 +5,6 @@ import vegeta from '../images/vegeta-battle.png';
 import majinVegeta from '../images/majin-vegeta.png';
 import ImageGallery from "react-image-gallery";
 import '../styles/work.css'
-import { Link } from "react-router-dom";
 
 const WorkCarousel = () => {
   const img = [
@@ -34,11 +33,8 @@ const WorkCarousel = () => {
 
     <h2 className="title-text bold-700">Creating digital excellence.</h2>
 <p className="description-text">Creating digital excellence with every pixel and line of code. Here is some of our work</p>
-<Link to='/portfolio'>
-
-
+<
 <button className="button work-button">explore portfolio</button>
-</Link>
 
    
     <ImageGallery items={img} showThumbnails={false}

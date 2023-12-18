@@ -38,7 +38,6 @@ const WorkCarousel = () => {
 
 
 <button className="button work-button">explore portfolio</button>
-</Link>
 
    
     <ImageGallery items={img} showThumbnails={false}

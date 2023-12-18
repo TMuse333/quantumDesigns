@@ -118,7 +118,6 @@ const Process = () => {
                              <button className="button">
                                 Level Up Today
                              </button>
-                             </Link>
                            
                     </div>
                     <Footer/>    

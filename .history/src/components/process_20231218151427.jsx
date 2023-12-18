@@ -6,7 +6,6 @@ import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 import { motion, AnimatePresence } from "framer-motion";
 import Navbar from "./navbar";
 import Footer from "./footer";
-import {Link} from 'react-router-dom'
 
 const Process = () => {
     const [currentTenet, setCurrentTenet] = useState(0);
@@ -114,11 +113,9 @@ const Process = () => {
                              </div>
                             
                              <h3 className="description-text bold-700 choice">The Choice Is Yours.</h3>
-                             <Link to='/booking'>
                              <button className="button">
                                 Level Up Today
                              </button>
-                             </Link>
                            
                     </div>
                     <Footer/>    

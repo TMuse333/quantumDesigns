@@ -114,11 +114,10 @@ const Process = () => {
                              </div>
                             
                              <h3 className="description-text bold-700 choice">The Choice Is Yours.</h3>
-                             <Link to='/booking'>
+                             <Link to=''
                              <button className="button">
                                 Level Up Today
                              </button>
-                             </Link>
                            
                     </div>
                     <Footer/>    

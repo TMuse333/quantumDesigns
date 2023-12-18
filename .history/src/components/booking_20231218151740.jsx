@@ -47,7 +47,9 @@ const Booking = () => {
         style={{height:'30vh'}}
         />
         <p className='correct'>
-          You have made an <span className='bold-700'>excellent </span> choice 
+            You have made an  
+                
+ 
         </p>
       <h1 className='title-text booking-title'>
         <span className='bold-700'>Elevate</span> your digital presence today

@@ -18,7 +18,7 @@ const Footer = () => {
           className='link'>Work with us</Link>
           <Link to="/portfolio"
           className='link'>Portfolio</Link>
-          <Link to="/about"
+          <Link to="/booking"
           className='link'>About us
           </Link>
         </div>

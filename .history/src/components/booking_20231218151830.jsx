@@ -48,6 +48,8 @@ const Booking = () => {
         />
         <p className='correct'>
           You have made an <span className='bold-700'>excellent </span> choice 
+                
+ 
         </p>
       <h1 className='title-text booking-title'>
         <span className='bold-700'>Elevate</span> your digital presence today
