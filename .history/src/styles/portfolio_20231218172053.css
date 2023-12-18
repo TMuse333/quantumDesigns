@@ -1,0 +1,25 @@
+.portfolio-container{
+    position: absolute;
+    background-color: var(--primary-color);
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top:50px;
+    left:0;
+}
+
+.personal-websites{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-link{
+    color:white;
+}
+
+.project-text{
+    font-size: ;
+}
+

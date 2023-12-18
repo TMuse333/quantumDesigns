@@ -1,0 +1,53 @@
+.intro-container{
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+   
+    
+}
+
+.intro {
+    width:100vw;
+    font-weight: 350;
+    font-size: 35px;
+    margin-bottom: 0.1rem;
+    margin-top: 1rem;
+    
+}
+
+.bold-700{
+    font-weight: 700;
+}
+
+.intro-end{
+    margin-top: 0rem;
+    padding:0 10px 0 10px;
+    font-weight: 550;
+    font-family: 'spartan',sans-serif;
+    color:#cfd0d0;
+
+}
+
+
+
+
+
+.intro-description img{
+ width:300px;
+}
+
+
+
+@media screen and (min-width: 500px)  {
+    .intro-description{
+            display: flex;
+            
+    }
+
+    .intro-description img{
+        width:450px
+    }
+}
+
+
