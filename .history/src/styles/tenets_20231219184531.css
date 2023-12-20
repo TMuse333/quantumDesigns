@@ -1,0 +1,83 @@
+.skills-section {
+    margin-top: -3rem;
+     background-color:var(--primary-color) ;
+     width: 100vw;
+     padding-bottom: 2rem;
+    
+   }
+
+   .tenets-container{
+    width: 100vw;
+  }
+
+  .attribute-container{
+    border:3px solid black;
+    margin-top:3rem;
+    background-size: 300px 350px;
+    background-repeat: no-repeat;
+    height:300px;
+    background-position: center;
+    overflow: hidden;
+    border: 3px solid white;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  
+  
+  
+  }
+
+  .attribute-name {
+    width:300px;
+    margin-left: auto;
+    margin-right:auto;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'spartan', sans-serif;
+    font-size: 1.5rem;
+    color:#0289b6;
+    padding:0 10px 0 10px;
+    /*#00bfff*/
+       
+    }
+    
+    .attribute-desc{
+      /* margin-top: 100px; */
+      width:280px;
+      text-align: center;
+      margin-left: auto;
+      margin-right:auto;
+      font-family: 'spartan', sans-serif;
+      padding-left: 5px;
+      padding-right: 5px;
+      font-weight: bold;
+      
+    }
+
+    .deliver {
+      font-size: 25px;
+      font-family: 'spartan',sans-serif;
+      padding:0 10px 0 10px;
+ 
+      
+    }
+
+    .committed {
+
+     
+      
+    }
+
+    .inspired{
+      margin-top:-1rem
+    }
+
+    .tenet-desc{
+      margin-top: 0.5rem;
+    }
+
+    @media screen and (min-width: 865px) {
+      .tenet-desc{
+        margin-top: 5rem;
+      }
+    }
