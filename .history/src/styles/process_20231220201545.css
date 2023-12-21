@@ -1,0 +1,174 @@
+.process-container{
+    width:100vw;
+    background-color: var(--primary-color);
+    position:absolute;
+    top:50px;
+    left:0;
+
+  
+
+}
+
+
+.tenet-container{
+
+    width:80vw;
+    border: 2px solid white;
+    height: 450px;
+    margin-bottom: 3rem;
+}
+   
+
+   
+   
+.arrows{
+    width:100vw;
+    display:flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+    
+    
+}
+
+.points li{
+    list-style: none;
+    text-align: left;
+    margin-top: 1rem;
+    font-size:0.8rem;
+}
+
+.title-holder{
+   
+    height:50px;
+    
+    text-align: center;
+    width: 70vw;
+}
+
+
+
+.tenet-title{
+padding: 0 5px 0 5px;
+
+     font-size: 1.2rem;
+    color: gold;
+    font-family: 'spartan', sans-serif;
+    text-align: center;
+
+
+    
+     
+}
+
+.tenet-desc{
+    margin-top: -0.5rem;
+    font-family: 'Palatino Sans', 'Palatino Sans Informal', 'Palatino Sans Text', 'Palatino Sans W1G', 'Palatino Sans W01', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    color:#cfd0d0;
+    padding: 0 5px 0 5px;
+  
+    
+}
+
+.points{
+ 
+}
+
+
+
+
+
+
+
+.video-container{
+    width:100vw;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.video-placeholder{
+    background-color: black;
+    height:200px;
+    width:90vw;
+    margin-left: auto;
+    margin-right: auto;
+    /* position: relative; */
+    
+
+}
+
+.video-container p {
+ 
+
+    /* position: relative; */
+    top:25%;
+    font-size: 40px;
+    
+     
+}
+
+.outro-container{
+    width:100vw;
+    
+}
+
+.outro{
+    font-size: 30px;
+}
+
+.choice{
+    font-size: 25px;
+    margin-top: -0.5rem;
+}
+.alternative p:first-child{
+    margin-top:-2rem;
+    font-size: 22px;
+}
+
+.alternative p:nth-child(2){
+    margin-top: -1.5rem;
+}
+
+
+
+
+
+.alternative{
+    margin-top: 3rem;
+    
+}
+
+
+body{
+    scroll-behavior: auto;
+}
+
+@media screen and (min-width:865px){
+
+ 
+
+    .attribute-container{
+        width:300px
+    }
+
+    .tenet-container{
+        max-width: 938px;
+    }
+
+    .tenet-desc{
+        font-size: 1.5rem;
+    }
+
+}
+
+
+
+
+
+
