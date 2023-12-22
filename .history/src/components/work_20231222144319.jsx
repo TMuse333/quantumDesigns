@@ -68,7 +68,7 @@ const WorkCarousel = () => {
       }}
       exit={{transition:'all 0.3s ease-in',
     opacity:0}}
-        className="description-text margin-top">
+        className="description-text">
          {portfolio[currentIndex].description}
          <br/>
          <button className="button">

@@ -74,7 +74,7 @@ const WorkCarousel = () => {
          <button className="button">
 
         
-         <motion.a 
+         <motion.a clas
           href={portfolio[currentIndex].link}
           key={currentIndex}
           initial={{opacity:0}}

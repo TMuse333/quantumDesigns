@@ -86,7 +86,6 @@ const WorkCarousel = () => {
           >
               View
           </motion.a>
-          </button>
         </motion.p>
         </AnimatePresence>
        

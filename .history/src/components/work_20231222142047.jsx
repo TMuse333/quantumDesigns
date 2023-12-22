@@ -17,12 +17,10 @@ const WorkCarousel = () => {
     {
       original: resume,
       thumbnail: resume,
-
     },
     {
       original: card,
       thumbnail: card,
-    
     },
     // Add more images as needed
   ];
@@ -70,11 +68,10 @@ const WorkCarousel = () => {
     opacity:0}}
         className="description-text margin-top">
          {portfolio[currentIndex].description}
-         <br/>
-         <button className="button">
-
-        
-         <motion.a 
+        </motion.p>
+        </AnimatePresence>
+        <AnimatePresence>
+          <motion.a 
           href={portfolio[currentIndex].link}
           key={currentIndex}
           initial={{opacity:0}}
@@ -86,11 +83,9 @@ const WorkCarousel = () => {
           >
               View
           </motion.a>
-          </button>
-        </motion.p>
         </AnimatePresence>
-       
-     </div>
+  
+        </div>
       
        
       </div>

@@ -71,9 +71,6 @@ const WorkCarousel = () => {
         className="description-text margin-top">
          {portfolio[currentIndex].description}
          <br/>
-         <button className="button">
-
-        
          <motion.a 
           href={portfolio[currentIndex].link}
           key={currentIndex}
@@ -86,11 +83,24 @@ const WorkCarousel = () => {
           >
               View
           </motion.a>
-          </button>
         </motion.p>
         </AnimatePresence>
-       
-     </div>
+        {/* <AnimatePresence>
+          <motion.a 
+          href={portfolio[currentIndex].link}
+          key={currentIndex}
+          initial={{opacity:0}}
+            animate={{ opacity: 1, 
+              transition: { delay: 0.7 } 
+            }}
+            exit={{transition:'all 0.3s ease-in',
+          opacity:0}}
+          >
+              View
+          </motion.a>
+        </AnimatePresence> */}
+  
+        </div>
       
        
       </div>

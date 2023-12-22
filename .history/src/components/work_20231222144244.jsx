@@ -72,8 +72,8 @@ const WorkCarousel = () => {
          {portfolio[currentIndex].description}
          <br/>
          <button className="button">
-
-        
+          
+         </button>
          <motion.a 
           href={portfolio[currentIndex].link}
           key={currentIndex}
@@ -86,7 +86,6 @@ const WorkCarousel = () => {
           >
               View
           </motion.a>
-          </button>
         </motion.p>
         </AnimatePresence>
        
