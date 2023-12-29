@@ -1,0 +1,6 @@
+.overview-container{
+    width:100vw;
+    background-color: var(--primary-color);
+    position: absolute;
+    top:60px
+}
