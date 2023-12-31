@@ -1,0 +1,17 @@
+.herobanner-container{
+    width:100vw;
+    background-image: url(src/images/dark-q3v-logo.jpg);
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    /*cover usually works*/
+    background-position:center top;  
+   height:400px;
+    position: relative;
+}
+
+.word-box{
+    margin-top: 19rem;
+}
+
