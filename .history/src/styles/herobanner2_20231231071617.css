@@ -1,0 +1,33 @@
+.herobanner-container{
+    width:100vw;
+    background-image: url(src/images/dark-q3v-logo.jpg);
+    /* background-image: url(src/images/q3-visuals-logo-2.svg); */
+  
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    /*cover usually works*/
+    background-position:center top;  
+   height:400px;
+    position: relative;
+ 
+}
+
+.word-box{
+    margin-top: 15rem;
+}
+
+.word-box .description-text{
+    font-size: 1rem;
+    font-weight: 400;
+    color:white
+}
+
+@media screen and (min-width:655px) {
+    .herobanner-container{
+        background-position: center 50%;
+        height:30vw;
+           /* padding-top:130px */
+    }
+}
+

@@ -1,0 +1,154 @@
+
+.services-container{
+    position: absolute;
+    top:70px;
+    left:0;
+    background-color: var(--primary-color);
+}
+
+.company-stats{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+.background-intro{
+    background-image: url('src/media/image-holder-dark.png');
+    /* background-image: url('src/media/goku-vs-jiren.jpg'); */
+    background-image: url(src/images/Real-itachi-susanoo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    margin-bottom: 1rem;
+   height:750px;
+   margin-top: -3rem;
+    /* height:100vh; */
+    /* height:100vh;
+    max-height: 540px; */
+    /* width:100vw; */
+}
+
+.background-intro .title-text{
+    padding-top: 2rem;
+    font-size: 2rem;
+}
+
+.background-intro .description-text{
+    margin-top: 5rem;
+    font-size: 1.2rem;
+    padding: 0 20px 2rem 20px;
+}
+
+.stat-box{
+    border:2px solid white;
+}
+
+.red{
+    background-color: rgb(69, 98, 123);
+}
+
+.services-box{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    width:80vw;
+
+}
+
+.service {
+    border: 2px solid white;
+    padding:10px 25px 10px 25px;
+    background-color: rgb(39, 120, 191);
+}
+
+.service .title-text{
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.service .description-text{
+    color:white;
+    font-weight: 300;
+}
+
+.closing-container{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* line-height: 1.5rem; */
+}
+
+.closing-container .description-text{
+    margin-top: 2rem;
+   margin-left: auto;
+   margin-right:auto;
+   /* margin-bottom: 0rem; */
+}
+
+.closing-container .action{
+    margin-top: 0rem;
+}
+
+.alternative{
+    margin-top: 2rem;
+}
+
+.choice-button{
+    margin-top: -3rem;
+}
+
+@media screen and (min-width:655px){
+
+    .company-stats{
+        flex-direction: row;
+    }
+
+    .background-intro {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        /* height:811px; */
+        margin-bottom: 0;
+        /* width:100%; */
+        /* height:40vw; */
+        /* max-height: 900px; */
+    }
+
+    .background-intro .description-text{
+        font-size: 1.4rem;
+    }
+
+    .company-services .description-text{
+        font-size: 1.2rem;
+    }
+
+    .background-intro .title-text{
+        font-size: 3rem;
+        /* color:red; */
+    }
+
+    .services-box {
+        width:100vw;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+    }
+
+    .service {
+  
+        margin:1.5%;
+        box-sizing:border-box;
+    }
+
+
+}
+
+@media screen and (min-width:855px){
+    .background-intro{
+        /* height:30vw;
+        max-height: 1000px; */
+    }
+}
