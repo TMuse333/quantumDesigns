@@ -1,0 +1,18 @@
+.tenet-star-container{
+    width:100vw;
+}
+
+
+.first-row{
+    display: flex;
+}
+
+.tenet{
+    width:200px;
+    
+}
+
+.third-row{
+    display: flex;
+}
+
