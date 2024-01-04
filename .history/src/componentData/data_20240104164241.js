@@ -123,7 +123,7 @@ class Content {
     },
     {
         name:'Custom User Interface',
-        description:'We can make your website completley from scratch to deliver percicely transform your visoin to reality',
+        description:'Unique, scratch-coded websites designed to bring your vision to reality.',
         background:'src/images/react-logo.jpeg'
     },
     {
