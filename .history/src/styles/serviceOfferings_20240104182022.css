@@ -1,0 +1,54 @@
+.service-offering-container{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 10;
+}
+
+.service-overview-list{
+    list-style: none;
+    padding: 0px 5px 0 5px;
+   
+    /* background-color: red; */
+}
+
+.service-overview-list li{
+    margin-bottom: 3rem;
+}
+
+.offered-service{
+    /* background-image: url(src/images/react-logo.jpeg); */
+    background-position: center 30%;
+ 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.service-overview-list li{
+    /* margin-left: auto; */
+  
+}
+
+.first {
+    background-color: #00a8df;
+}
+
+.second{
+    background-color: blueviolet;
+}
+
+
+@media screen and (min-width:655px){
+    .service-offering-container{
+        flex-direction: row;
+    }
+
+    .offered-service{
+        width:50vw;
+    }
+}

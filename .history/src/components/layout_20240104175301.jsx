@@ -28,7 +28,7 @@ const Layout = () => {
   /> */}
   <Content {...content1} />
 
-  <ServiceOffering/>
+  <Se
 
   <Content {...content2}/>
 

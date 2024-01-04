@@ -39,7 +39,7 @@ function App() {
    
       <Route path='/' 
       element={<Layout/>}
-     
+      // element={<ServiceOffering/>}
       />
 
       <Route path='process' 

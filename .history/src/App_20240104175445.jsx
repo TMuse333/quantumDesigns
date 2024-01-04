@@ -39,7 +39,6 @@ function App() {
    
       <Route path='/' 
       element={<Layout/>}
-     
       />
 
       <Route path='process' 

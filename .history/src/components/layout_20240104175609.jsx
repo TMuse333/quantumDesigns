@@ -37,9 +37,9 @@ const Layout = () => {
  <Testimonials/>
 
 
- <Outro
+ {/* <Outro
  title='transform your vision today'
- content={content1.description}/>
+ content={content1.description}/> */}
  <Footer/>
  
 

@@ -23,13 +23,10 @@ const Layout = () => {
         <div className="layout">
        <Navbar/>    
  <Herobanner2/>
- {/* <Sphere 
+ <Sphere 
 
-  /> */}
+  />
   <Content {...content1} />
-
-  <ServiceOffering/>
-
   <Content {...content2}/>
 
 

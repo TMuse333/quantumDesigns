@@ -28,8 +28,8 @@ const Layout = () => {
   /> */}
   <Content {...content1} />
 
-  <ServiceOffering/>
 
+  
   <Content {...content2}/>
 
 

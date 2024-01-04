@@ -39,7 +39,7 @@ function App() {
    
       <Route path='/' 
       element={<Layout/>}
-     
+      element={<Layout/>}
       />
 
       <Route path='process' 

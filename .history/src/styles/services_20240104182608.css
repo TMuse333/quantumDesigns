@@ -212,7 +212,6 @@
     .background-intro .description-text{
         font-size: 1.4rem;
         font-weight: 500;
-        padding: 0 10px 0 10px;
     }
 
     .company-services .description-text{
@@ -243,10 +242,6 @@
         box-sizing:border-box;
         /* max-width: 250px; */
         
-    }
-
-    .q3-description{
-        padding:0 20px 0 20px;
     }
 
 

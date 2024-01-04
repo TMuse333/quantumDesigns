@@ -33,8 +33,8 @@ const Layout = () => {
   <Content {...content2}/>
 
 
- <WorkCarousel/>
- <Testimonials/>
+ {/* <WorkCarousel/>
+ <Testimonials/> */}
 
 
  <Outro

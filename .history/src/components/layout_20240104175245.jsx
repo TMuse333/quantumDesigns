@@ -12,7 +12,7 @@ import { content1 } from "../componentData/data";
 import { content2 } from "../componentData/data";
 import Content from "./content";
 import Herobanner2 from "./herobanner2";
-import ServiceOffering from "./serviceOffering";
+import 
 
 
 
@@ -23,13 +23,10 @@ const Layout = () => {
         <div className="layout">
        <Navbar/>    
  <Herobanner2/>
- {/* <Sphere 
+ <Sphere 
 
-  /> */}
+  />
   <Content {...content1} />
-
-  <ServiceOffering/>
-
   <Content {...content2}/>
 
 

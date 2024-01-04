@@ -38,8 +38,8 @@ function App() {
     <Routes>
    
       <Route path='/' 
-      element={<Layout/>}
-     
+      // element={<Layout/>}
+      element={<ServiceOffering/>}
       />
 
       <Route path='process' 
