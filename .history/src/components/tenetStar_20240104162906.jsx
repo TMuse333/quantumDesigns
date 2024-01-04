@@ -155,7 +155,7 @@ const animations = [
      isAnimated={isAnimated}
      returnAnimation={returnAnimations[1]}
      isReturning={(!isAnimated) === true}
-     descriptionClick={(e) => toggleDescription(e, tenetsData[1].name)}
+    //  descriptionClick={(e) => toggleDescription(e, tenetsData[1].name)}
      />
     </AnimatePresence>
 

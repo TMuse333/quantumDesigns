@@ -1,6 +1,5 @@
 .tenet-star-container{
     width:100vw;
-    position: relative;
 }
 
 
@@ -11,7 +10,6 @@
 .tenet{
     width:200px;
     
-    
 }
 
 .third-row{
@@ -21,10 +19,5 @@
 .tenet-button{
     height:100px;
     justify-content: center;
-    font-size: 2rem;
-    position: absolute;
-    left:50%;
-    top:50%;
-    transform: translate(-50%,-50%);
 }
 

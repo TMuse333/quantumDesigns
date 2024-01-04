@@ -55,7 +55,7 @@ const Services = ({stats,services}) => {
       })
       
       const style = {
-
+        
       }
 
     useEffect(() => {
@@ -222,19 +222,19 @@ className='description-text'>
                 <div className="tenets-box">
                         {tenetsData.map((tenet,index) => (
                              <div key={index} className="tenet"
-                            //  style={style(visibleDescriptions[tenet.name],index)}
+                             style={style(visibleDescriptions[tenet.name],index)}
                              onClick={() => toggleDescription(tenet.name)}
                              >
                              <h2 className="title-text" 
                             
-                            //  style={titleStyle(visibleDescriptions[tenet.name])}
+                             style={titleStyle(visibleDescriptions[tenet.name])}
                              >
                                {tenet.name}
                            
                              </h2>
-                             {/* {visibleDescriptions[tenet.name] && (
+                             {visibleDescriptions[tenet.name] && (
             <p className="description-text">{tenet.description}</p>
-          )}    */}
+          )}   
                </div>
                         ))}
                 </div> 

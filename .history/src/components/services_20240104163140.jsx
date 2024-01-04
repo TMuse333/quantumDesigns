@@ -53,10 +53,7 @@ const Services = ({stats,services}) => {
         // overflowY: 'scroll',
    
       })
-      
-      const style = {
 
-      }
 
     useEffect(() => {
 
@@ -214,32 +211,32 @@ className='description-text'>
                     by Q3 has these following principles 
                     applied to it
                 </p>
-
-                   {/* {tenetsContent.map((tenet,index) => (
+{/* 
+                   {tenetsContent.map((tenet,index) => (
                     <Content {...tenet}/>
-                   ))}  */}
+                   ))} */}
 
-                <div className="tenets-box">
+                {/* <div className="tenets-box">
                         {tenetsData.map((tenet,index) => (
                              <div key={index} className="tenet"
-                            //  style={style(visibleDescriptions[tenet.name],index)}
+                             style={style(visibleDescriptions[tenet.name],index)}
                              onClick={() => toggleDescription(tenet.name)}
                              >
                              <h2 className="title-text" 
                             
-                            //  style={titleStyle(visibleDescriptions[tenet.name])}
+                             style={titleStyle(visibleDescriptions[tenet.name])}
                              >
                                {tenet.name}
                            
                              </h2>
-                             {/* {visibleDescriptions[tenet.name] && (
+                             {visibleDescriptions[tenet.name] && (
             <p className="description-text">{tenet.description}</p>
-          )}    */}
+          )}   
                </div>
                         ))}
-                </div> 
+                </div> */}
 
-{/* <TenetStar/> */}
+<TenetStar/>
 
             </div>
 

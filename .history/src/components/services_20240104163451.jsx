@@ -227,14 +227,14 @@ className='description-text'>
                              >
                              <h2 className="title-text" 
                             
-                            //  style={titleStyle(visibleDescriptions[tenet.name])}
+                             style={titleStyle(visibleDescriptions[tenet.name])}
                              >
                                {tenet.name}
                            
                              </h2>
-                             {/* {visibleDescriptions[tenet.name] && (
+                             {visibleDescriptions[tenet.name] && (
             <p className="description-text">{tenet.description}</p>
-          )}    */}
+          )}   
                </div>
                         ))}
                 </div> 

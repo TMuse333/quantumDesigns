@@ -4,10 +4,15 @@ import '../styles/tenetStar.css'
 import { useState } from 'react'
 import {motion, AnimatePresence} from 'framer-motion'
 
-const Tenet = ({ name, description, isAnimated,
-   animation, isReturning, returnAnimation,
-    animationClick,descriptionClick }) => {
+const Tenet = ({ name, description, isAnimated, animation, isReturning, returnAnimation, animationClick }) => {
+    const [visibleDescriptions, setVisibleDescriptions] = useState({});
   
+    const toggleDescription = (tenetName) => {
+      setVisibleDescriptions((prevVisible) => ({
+        ...prevVisible,
+        [tenetName]: !prevVisible[tenetName],
+      }));
+    };
   
     return (
       <AnimatePresence>
@@ -21,11 +26,7 @@ const Tenet = ({ name, description, isAnimated,
           <h2 className='description-text'>
             {name}
           </h2>
-         {descriptionClick && (
-          <p className='description-text'>
-            {description}
-          </p>
-         )}
+          {/* <p className='description-text'>{description}</p> */}
         </motion.div>
       </AnimatePresence>
     );
@@ -35,17 +36,7 @@ const Tenet = ({ name, description, isAnimated,
 const TenetStar = () => {
 
     const [isAnimated, setIsAnimated] = useState(false);
-    const [isClicked, setIsCLicked] = useState({})
-
-    const toggleDescription = (event, tenetName) => {
-      // Prevent the animation click event from triggering when clicking the description
-      event.stopPropagation();
-      setIsClicked((prevIsClicked) => ({
-        ...prevIsClicked,
-        [tenetName]: !prevIsClicked[tenetName],
-      }));
-      console.log('Description clicked for ' + tenetName);
-    };
+    const [isClicked, setIsCLicked] = useState(true)
 
     const animationClick = () => {
       setIsAnimated(!isAnimated);
@@ -54,27 +45,19 @@ const TenetStar = () => {
 
     const tenetAnimation = {
         initial: {opacity:1},
-        animate:{opacity:0},
-        transition:{opacity:{delay:1.6}}
+        animate:{opacity:0}
     }
-
-
-    const returnTenetAnimation = {
-        initial: { opacity: 0 },
-        animate: { opacity: 1 },
-        transition: { opacity: { delay: 0 } },
-      };
 
 const animations = [
     {
       initial: { x: 300, y: 100, opacity: 1, scale: 0.1 },
       animate: { x: 0, y: 0, opacity: 1, scale: 1 },
-      transition: { scale: { delay: 0.3 }, opacity: { delay: 0 } },
+      transition: { scale: { delay: 0.3 }, opacity: { delay: 0.3 } },
     },
     {
       initial: { x: -200, y: 100, opacity: 1, scale: 0.2 },
       animate: { x: 0, y: 0, opacity: 1, scale: 1 },
-      transition: { delay: 0.3, scale: { delay: 0.6 }, opacity: { delay: 0.3 } },
+      transition: { delay: 0.3, scale: { delay: 0.6 }, opacity: { delay: 0.6 } },
     },
     {
       initial: { x: 20, y: 20, opacity: 1, scale: 0.2 },
@@ -96,7 +79,7 @@ const animations = [
   const returnAnimations = [
     {
       initial: { x: 0, y: 0, opacity: 0, scale: 1 },
-      animate: { x: 200, y: 100, opacity: 0, scale: 0.2 },
+      animate: { x: 200, y: 100, opacity: 1, scale: 0.2 },
     },
     {
       initial: { x: 0, y: 0, opacity: 1, scale: 1 },
@@ -125,12 +108,11 @@ const animations = [
 
             <motion.div 
             onClick={()=>animationClick()}
-            initial={isAnimated ? tenetAnimation.initial :returnTenetAnimation.initial }
-            animate={
-                isAnimated ?
-                 tenetAnimation.animate : returnTenetAnimation.animate}
-                 transition={isAnimated ?tenetAnimation.transition : returnTenetAnimation.transition}
-            className='tenet tenet-button'>
+            initial={tenetAnimation.initial}
+            // animate={
+            //     isAnimated ?
+            //      tenetAnimation.animate : tenetAnimation.initial}
+            className='tenet'>
                 Our tenets
             </motion.div>
 
@@ -143,7 +125,6 @@ const animations = [
      isAnimated={isAnimated}
      returnAnimation={returnAnimations[0]}
      isReturning={(!isAnimated) === true}
-    //  descriptionClick={(e) => toggleDescription(e, tenetsData[0].name)}
      />
     </AnimatePresence>
    
@@ -155,7 +136,6 @@ const animations = [
      isAnimated={isAnimated}
      returnAnimation={returnAnimations[1]}
      isReturning={(!isAnimated) === true}
-     descriptionClick={(e) => toggleDescription(e, tenetsData[1].name)}
      />
     </AnimatePresence>
 
@@ -170,7 +150,6 @@ const animations = [
      isAnimated={isAnimated}
      returnAnimation={returnAnimations[2]}
      isReturning={(!isAnimated) === true}
-    //  descriptionClick={(e) => toggleDescription(e, tenetsData[2].name)}
      />
     </AnimatePresence>
 </div>
@@ -184,7 +163,6 @@ const animations = [
      isAnimated={isAnimated}
      returnAnimation={returnAnimations[3]}
      isReturning={(!isAnimated) === true}
-    //  descriptionClick={(e) => toggleDescription(e, tenetsData[3].name)}
      />
     </AnimatePresence>
     <AnimatePresence>
@@ -195,7 +173,6 @@ const animations = [
      isAnimated={isAnimated}
      returnAnimation={returnAnimations[4]}
      isReturning={(!isAnimated) === true}
-    //  descriptionClick={(e) => toggleDescription(e, tenetsData[4].name)}
      />
     </AnimatePresence>
 </div>

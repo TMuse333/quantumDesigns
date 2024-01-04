@@ -227,7 +227,7 @@ className='description-text'>
                              >
                              <h2 className="title-text" 
                             
-                            //  style={titleStyle(visibleDescriptions[tenet.name])}
+                             style={titleStyle(visibleDescriptions[tenet.name])}
                              >
                                {tenet.name}
                            

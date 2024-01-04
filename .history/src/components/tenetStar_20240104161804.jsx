@@ -4,9 +4,7 @@ import '../styles/tenetStar.css'
 import { useState } from 'react'
 import {motion, AnimatePresence} from 'framer-motion'
 
-const Tenet = ({ name, description, isAnimated,
-   animation, isReturning, returnAnimation,
-    animationClick,descriptionClick }) => {
+const Tenet = ({ name, description, isAnimated, animation, isReturning, returnAnimation, animationClick }) => {
   
   
     return (
@@ -21,11 +19,7 @@ const Tenet = ({ name, description, isAnimated,
           <h2 className='description-text'>
             {name}
           </h2>
-         {descriptionClick && (
-          <p className='description-text'>
-            {description}
-          </p>
-         )}
+          {/* <p className='description-text'>{description}</p> */}
         </motion.div>
       </AnimatePresence>
     );
@@ -35,17 +29,7 @@ const Tenet = ({ name, description, isAnimated,
 const TenetStar = () => {
 
     const [isAnimated, setIsAnimated] = useState(false);
-    const [isClicked, setIsCLicked] = useState({})
-
-    const toggleDescription = (event, tenetName) => {
-      // Prevent the animation click event from triggering when clicking the description
-      event.stopPropagation();
-      setIsClicked((prevIsClicked) => ({
-        ...prevIsClicked,
-        [tenetName]: !prevIsClicked[tenetName],
-      }));
-      console.log('Description clicked for ' + tenetName);
-    };
+    const [isClicked, setIsCLicked] = useState(true)
 
     const animationClick = () => {
       setIsAnimated(!isAnimated);
@@ -143,7 +127,6 @@ const animations = [
      isAnimated={isAnimated}
      returnAnimation={returnAnimations[0]}
      isReturning={(!isAnimated) === true}
-    //  descriptionClick={(e) => toggleDescription(e, tenetsData[0].name)}
      />
     </AnimatePresence>
    
@@ -155,7 +138,6 @@ const animations = [
      isAnimated={isAnimated}
      returnAnimation={returnAnimations[1]}
      isReturning={(!isAnimated) === true}
-     descriptionClick={(e) => toggleDescription(e, tenetsData[1].name)}
      />
     </AnimatePresence>
 
@@ -170,7 +152,6 @@ const animations = [
      isAnimated={isAnimated}
      returnAnimation={returnAnimations[2]}
      isReturning={(!isAnimated) === true}
-    //  descriptionClick={(e) => toggleDescription(e, tenetsData[2].name)}
      />
     </AnimatePresence>
 </div>
@@ -184,7 +165,6 @@ const animations = [
      isAnimated={isAnimated}
      returnAnimation={returnAnimations[3]}
      isReturning={(!isAnimated) === true}
-    //  descriptionClick={(e) => toggleDescription(e, tenetsData[3].name)}
      />
     </AnimatePresence>
     <AnimatePresence>
@@ -195,7 +175,6 @@ const animations = [
      isAnimated={isAnimated}
      returnAnimation={returnAnimations[4]}
      isReturning={(!isAnimated) === true}
-    //  descriptionClick={(e) => toggleDescription(e, tenetsData[4].name)}
      />
     </AnimatePresence>
 </div>

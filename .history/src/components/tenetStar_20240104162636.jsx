@@ -35,15 +35,11 @@ const Tenet = ({ name, description, isAnimated,
 const TenetStar = () => {
 
     const [isAnimated, setIsAnimated] = useState(false);
-    const [isClicked, setIsCLicked] = useState({})
+    const [isClicked, setIsCLicked] = useState(true)
 
     const toggleDescription = (event, tenetName) => {
       // Prevent the animation click event from triggering when clicking the description
       event.stopPropagation();
-      setIsClicked((prevIsClicked) => ({
-        ...prevIsClicked,
-        [tenetName]: !prevIsClicked[tenetName],
-      }));
       console.log('Description clicked for ' + tenetName);
     };
 
@@ -155,7 +151,7 @@ const animations = [
      isAnimated={isAnimated}
      returnAnimation={returnAnimations[1]}
      isReturning={(!isAnimated) === true}
-     descriptionClick={(e) => toggleDescription(e, tenetsData[1].name)}
+    //  descriptionClick={(e) => toggleDescription(e, tenetsData[1].name)}
      />
     </AnimatePresence>
 
@@ -195,7 +191,7 @@ const animations = [
      isAnimated={isAnimated}
      returnAnimation={returnAnimations[4]}
      isReturning={(!isAnimated) === true}
-    //  descriptionClick={(e) => toggleDescription(e, tenetsData[4].name)}
+     descriptionClick={(e) => toggleDescription(e, tenetsData[4].name)}
      />
     </AnimatePresence>
 </div>
