@@ -21,11 +21,11 @@ const Tenet = ({ name, description, isAnimated,
           <h2 className='description-text'>
             {name}
           </h2>
-         {descriptionClick && (
+         {/* {descriptionClick && (
           <p className='description-text'>
             {description}
           </p>
-         )}
+         )} */}
         </motion.div>
       </AnimatePresence>
     );

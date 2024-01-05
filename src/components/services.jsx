@@ -60,7 +60,7 @@ const Services = ({stats,services}) => {
 
     useEffect(() => {
 
-        // window.scrollTo(0, 0);
+        window.scrollTo(0, 0);
 
       const handleScroll = () => {
         const scrollPosition = window.scrollY + window.innerHeight ;
