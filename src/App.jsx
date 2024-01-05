@@ -19,7 +19,7 @@ import Booking from './components/booking'
 import Portfolio from './components/portfolio'
 import Overview from './components/overview'
 import Services from './components/services'
-import ServiceOffering from './components/serviceOffering'
+import ServiceOverview from './components/serviceOverview'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -60,7 +60,13 @@ function App() {
 
       </Route>
 
-      <Route path='portfolio' element={<Portfolio/>}></Route>
+      <Route path='portfolio'
+       element={<Portfolio/>}></Route>
+
+       <Route path='react'
+       element={<ServiceOverview/>}>
+          
+       </Route>
 
    
     </Routes>

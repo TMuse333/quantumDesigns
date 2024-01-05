@@ -1,5 +1,6 @@
 import React from "react";
 import '../styles/serviceOfferings.css'
+import { Link } from "react-router-dom";
 
 const ServiceOffering = () => {
 
@@ -36,6 +37,11 @@ const ServiceOffering = () => {
                     Extremely scalable and efficient to maintain
                 </li>
             </ul>
+            <Link to='react'>
+                <button className="button">
+                    Learn more
+                </button>
+            </Link>
         </div>
 
         <div className="offered-service second">
