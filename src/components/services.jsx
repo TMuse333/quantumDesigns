@@ -205,43 +205,7 @@ className='description-text'>
 </div>
             </div>
 
-            <div className="tenets-container">
-                <h1 className="title-text">
-                    Our Tenets
-                </h1>
-                <p className="description-text">
-                    Any product that is made with
-                    by Q3 has these following principles 
-                    applied to it
-                </p>
-
-                   {/* {tenetsContent.map((tenet,index) => (
-                    <Content {...tenet}/>
-                   ))}  */}
-
-                <div className="tenets-box">
-                        {tenetsData.map((tenet,index) => (
-                             <div key={index} className="tenet"
-                            //  style={style(visibleDescriptions[tenet.name],index)}
-                             onClick={() => toggleDescription(tenet.name)}
-                             >
-                             <h2 className="title-text" 
-                            
-                            //  style={titleStyle(visibleDescriptions[tenet.name])}
-                             >
-                               {tenet.name}
-                           
-                             </h2>
-                             {/* {visibleDescriptions[tenet.name] && (
-            <p className="description-text">{tenet.description}</p>
-          )}    */}
-               </div>
-                        ))}
-                </div> 
-
-{/* <TenetStar/> */}
-
-            </div>
+           
 
 
 

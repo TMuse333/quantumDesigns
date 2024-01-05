@@ -1,0 +1,33 @@
+.service-offering-container{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 10;
+}
+
+.service-overview-list{
+    list-style: none;
+}
+
+.offered-service{
+    /* background-image: url(src/images/react-logo.jpeg); */
+    background-position: center 30%;
+    height:40vw;
+    
+}
+
+.first {
+    background-color: blue;
+}
+
+.second{
+    background-color: ;
+}
+
+
+@media screen and (min-width:655px){
+    .service-offering-container{
+        flex-direction: row;
+    }
+}

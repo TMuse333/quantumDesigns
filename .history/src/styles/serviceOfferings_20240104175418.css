@@ -1,0 +1,13 @@
+.service-offerings-container{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+@media screen and (min-width:655px){
+    .service-offerings-container{
+        flex-direction: row;
+    }
+}
