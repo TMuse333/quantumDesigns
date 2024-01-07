@@ -1,4 +1,4 @@
-import React, { useEffect ,useState} from "react";
+import React, { useEffect, ,useState} from "react";
 import '../app.css';
 import WorkCarousel from "./work";
 import Testimonials from "./testimonials";
@@ -9,14 +9,13 @@ import Navbar from "./navbar";
 import { content1 } from "../componentData/data";
 import { content2 } from "../componentData/data";
 import Content from "./content";
-
+import Herobanner2 from "./herobanner2";
 import ServiceOffering from "./serviceOffering";
 import Hero3 from "./herobanner3";
 
 const Layout2 = () => {
   const [scrollY, setScrollY] = useState(0);
   const [content1animated, setContent1Animated] = useState(false);
-  const [content2animated, setContent2Animated] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -34,20 +33,6 @@ const Layout2 = () => {
           setContent1Animated(false);
         }
       }
-
-      const content2Element = document.getElementById("content2");
-      if (content2Element) {
-        const { top, bottom } = content2Element.getBoundingClientRect();
-        if (top < window.innerHeight && bottom >= 0) {
-          // Element is in the viewport
-          setContent2Animated(true);
-        } else {
-          // Element is not in the viewport
-          setContent2Animated(false);
-        }
-      }
-
-
     };
 
     // Add event listener when the component mounts
@@ -60,9 +45,6 @@ const Layout2 = () => {
   }, []); // Empty dependency array to run the effect only once on mount
 
   return (
-    <div className="background-container">
-
-
     <div className="layout">
         <Navbar/>
     <Hero3/>
@@ -71,18 +53,7 @@ const Layout2 = () => {
      <Content {...content1}
      isAnimated={content1animated}/>
 
-     <ServiceOffering/>
-
-    <Content {...content2}
-    isAnimated={content2animated}
-    />
-
-<WorkCarousel />
-            <Testimonials />
-            <Outro title='transform your vision today' content={content1.description} />
-
   <Footer/>
-    </div>
     </div>
   );
 };

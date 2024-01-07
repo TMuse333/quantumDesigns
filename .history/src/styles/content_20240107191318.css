@@ -5,7 +5,8 @@
     padding-top: 3px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     /* transform: rotateY(300deg); */
-  
+    background-image: url(src/images/quantum-realm.png);
+    background-size: cover;
 }
 
 

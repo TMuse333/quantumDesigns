@@ -61,8 +61,8 @@ const Layout2 = () => {
 
   return (
     <div className="background-container">
-
-
+        
+    </div>
     <div className="layout">
         <Navbar/>
     <Hero3/>
@@ -77,12 +77,7 @@ const Layout2 = () => {
     isAnimated={content2animated}
     />
 
-<WorkCarousel />
-            <Testimonials />
-            <Outro title='transform your vision today' content={content1.description} />
-
   <Footer/>
-    </div>
     </div>
   );
 };

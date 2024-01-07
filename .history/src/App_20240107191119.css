@@ -39,16 +39,6 @@ margin-right: auto;
   }
 }
 
-.background-container {
-  height: 200vh;
-
-  position: absolute;
-  left: 0;
-  width: 100%;
-  z-index: 13;
-  /* background-image: url(src/images/quantum-realm.png);
-  background-size: cover; */
-}
 
 
 .layout{
@@ -58,8 +48,8 @@ margin-right: auto;
 
   position: absolute;
   left:0;
-/* background-image: url(src/images/quantum-realm.png);
-background-size: cover; */
+background-image: url(src/images/quantum-realm.png);
+background-size: cover;
   overflow-x: hidden;
   padding: 0;
 z-index: 13;

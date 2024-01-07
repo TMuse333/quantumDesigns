@@ -77,10 +77,6 @@ const Layout2 = () => {
     isAnimated={content2animated}
     />
 
-<WorkCarousel />
-            <Testimonials />
-            <Outro title='transform your vision today' content={content1.description} />
-
   <Footer/>
     </div>
     </div>

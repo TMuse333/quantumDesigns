@@ -60,9 +60,6 @@ const Layout2 = () => {
   }, []); // Empty dependency array to run the effect only once on mount
 
   return (
-    <div className="background-container">
-
-
     <div className="layout">
         <Navbar/>
     <Hero3/>
@@ -74,15 +71,9 @@ const Layout2 = () => {
      <ServiceOffering/>
 
     <Content {...content2}
-    isAnimated={content2animated}
-    />
-
-<WorkCarousel />
-            <Testimonials />
-            <Outro title='transform your vision today' content={content1.description} />
+    
 
   <Footer/>
-    </div>
     </div>
   );
 };

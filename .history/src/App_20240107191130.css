@@ -40,14 +40,14 @@ margin-right: auto;
 }
 
 .background-container {
-  height: 200vh;
-
+  height: 100vh;
+  overflow: hidden;
   position: absolute;
   left: 0;
   width: 100%;
   z-index: 13;
-  /* background-image: url(src/images/quantum-realm.png);
-  background-size: cover; */
+  background-image: url(src/images/quantum-realm.png);
+  background-size: cover;
 }
 
 
