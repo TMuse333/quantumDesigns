@@ -1,0 +1,74 @@
+.service-offering-container{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 9;
+   
+}
+
+
+.service-point {
+    list-style: none;
+    margin-bottom: 3rem;
+}
+
+.service-list li:first-child {
+    margin-top:2rem
+}
+
+
+
+
+
+
+
+
+.offered-service {
+   
+    background-image: url(src/images/dark-react.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 80% 30%;
+}
+
+.offered-service .description-text{
+    text-align: center;
+}
+
+.service-overview-list li{
+    /* margin-left: auto; */
+  
+}
+
+.first {
+    /* background-color: #0091c2; */
+    /* background-image: url(src/images/dark-react.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+
+
+@media screen and (min-width:655px){
+    .service-offering-container{
+        flex-direction: column;
+    }
+
+    .offered-service{
+        width:100vw;
+    }
+
+    .service-overview-list li{
+        margin-bottom: 1rem;
+        font-weight: 550;
+        font-size: .2rem;
+    }
+
+    .offered-service p{
+        font-size: 1.5rem;
+        width:80vw;
+    }
+}

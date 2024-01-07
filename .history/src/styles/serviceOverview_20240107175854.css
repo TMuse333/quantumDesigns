@@ -1,0 +1,70 @@
+.serviceOverview-container {
+    background-image: url(@keyframes fallAnimation {
+        0% {
+          background-position: 0% 0%;
+        }
+      
+        50%{
+          background-position: 0% 50%;
+        }
+      
+        100% {
+          background-position: 0% 100%;
+        }
+      }
+      
+      .layout{
+        width:100vw;
+        height:100vh;
+      
+        position: absolute;
+        left:0;
+      background-image: url(src/images/quantum-realm.png);
+      background-size: cover;
+        overflow-x: hidden;
+        padding: 0;
+      z-index: 13;
+      
+      background-repeat: repeat-y;
+      
+      animation: fallAnimation 10s linear infinite;
+      
+      }
+      
+      
+      
+      @keyframes floatAnimation {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-5px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+      
+      
+      
+      
+      
+      @keyframes moveBackground {
+        0% {
+          background-position: 0% 0%;
+        }
+      
+        50%{
+          background-position: 50% 0%;
+        }
+      
+        100% {
+          background-position: 0% 0%;
+        }
+      });
+    width:100vw;
+}
+
+.scroll-down-animation{
+    font-size: 1.5rem;
+}
