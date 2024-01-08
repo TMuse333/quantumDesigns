@@ -13,7 +13,7 @@ import {
   Route, Routes
 
 } from "react-router-dom";
-
+import Process from './components/process'
 import Booking from './components/booking'
 
 import Portfolio from './components/portfolio'

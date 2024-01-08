@@ -180,7 +180,43 @@ className='description-text'>
                 </div>
             </div>
 
-  
+    
+
+            <div className="company-services">
+                <h1 className="title-text">
+                    Here key aspects to our work that help us stand out from the rest
+                </h1>
+                <p className="description-text">
+                   
+                </p>
+                <div className="services-box">
+  {companyServices.map((service, index) => (
+    <motion.div
+      key={index}
+      initial={{ opacity: 0, y: 50 }}
+      animate={isAnimated ? { opacity: 1, y: 0 } : {}}
+      transition={{ delay: index * 0.4 }} // Adjust the delay based on your preference
+      className="service"
+    >
+      <h2 className="title-text">{service.name}</h2>
+      <p className="description-text">{service.description}</p>
+    </motion.div>
+  ))}
+</div>
+            </div>
+
+           
+
+
+
+
+
+                
+
+
+          
+
+    
 
 <Footer
 // links={links}

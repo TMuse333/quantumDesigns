@@ -6,7 +6,7 @@ import {motion, AnimatePresence} from 'framer-motion'
 
 const Tenet = ({ name, description, isAnimated,
    animation, isReturning, returnAnimation,
-    animationClick, }) => {
+    animationClick,descriptionClick }) => {
   
   
     return (
@@ -21,8 +21,11 @@ const Tenet = ({ name, description, isAnimated,
           <h2 className='description-text'>
             {name}
           </h2>
-         
-      
+         {/* {descriptionClick && (
+          <p className='description-text'>
+            {description}
+          </p>
+         )} */}
         </motion.div>
       </AnimatePresence>
     );
@@ -120,7 +123,7 @@ const animations = [
     return (
         <div className='tenet-star-container'>
 
-            {/* <motion.div 
+            <motion.div 
             onClick={()=>animationClick()}
             initial={isAnimated ? tenetAnimation.initial :returnTenetAnimation.initial }
             animate={
@@ -129,7 +132,7 @@ const animations = [
                  transition={isAnimated ?tenetAnimation.transition : returnTenetAnimation.transition}
             className='tenet tenet-button'>
                 Our tenets
-            </motion.div> */}
+            </motion.div>
 
 <div className='first-row'>
     <AnimatePresence>

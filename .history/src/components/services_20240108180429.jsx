@@ -175,12 +175,7 @@ className='description-text'>
                 </div>
               
               
-                <div className="line">
-
-                </div>
-            </div>
-
-  
+              
 
 <Footer
 // links={links}

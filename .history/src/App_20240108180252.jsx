@@ -13,7 +13,7 @@ import {
   Route, Routes
 
 } from "react-router-dom";
-
+import Process from './components/process'
 import Booking from './components/booking'
 
 import Portfolio from './components/portfolio'
@@ -22,7 +22,6 @@ import Services from './components/services'
 import ServiceOverview from './components/serviceOverview'
 import ParallaxLayout from './components/paralax'
 import Layout2 from './components/layout2'
-import Tenets from './components/tenets'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -41,8 +40,8 @@ function App() {
       />
 
       <Route path='tenets' 
-      
-      element={<Tenets/>}
+      // element={<Process/>}
+      element={<Services/>}
       >
 
       </Route>

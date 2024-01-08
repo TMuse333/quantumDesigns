@@ -172,15 +172,10 @@ className='description-text'>
 </AnimatePresence>
 
 
-                </div>
               
               
-                <div className="line">
-
-                </div>
-            </div>
-
-  
+              
+              
 
 <Footer
 // links={links}

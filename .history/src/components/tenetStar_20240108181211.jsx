@@ -6,7 +6,7 @@ import {motion, AnimatePresence} from 'framer-motion'
 
 const Tenet = ({ name, description, isAnimated,
    animation, isReturning, returnAnimation,
-    animationClick, }) => {
+    animationClick,descriptionClick }) => {
   
   
     return (
@@ -21,8 +21,11 @@ const Tenet = ({ name, description, isAnimated,
           <h2 className='description-text'>
             {name}
           </h2>
-         
-      
+         {descriptionClick && (
+          <p className='description-text'>
+            {description}
+          </p>
+         )}
         </motion.div>
       </AnimatePresence>
     );
@@ -167,7 +170,7 @@ const animations = [
      isAnimated={isAnimated}
      returnAnimation={returnAnimations[2]}
      isReturning={(!isAnimated) === true}
-    //  descriptionClick={(e) => toggleDescription(e, tenetsData[2].name)}
+     descriptionClick={(e) => toggleDescription(e, tenetsData[2].name)}
      />
     </AnimatePresence>
 </div>
