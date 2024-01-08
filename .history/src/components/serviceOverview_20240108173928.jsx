@@ -143,11 +143,6 @@ const ServiceOverview = () => {
                       click below
                       
                     </p>
-                    <Link to='/process'>
-                        <button className="button">
-                          Our tenets of work
-                        </button>
-                      </Link>
                 </div>
                
               </div>

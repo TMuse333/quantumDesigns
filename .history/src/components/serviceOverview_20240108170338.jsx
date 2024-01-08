@@ -88,20 +88,15 @@ const ServiceOverview = () => {
 
           <h2>Our approach</h2>
           <h1 className="title-text">
-            All around web dev
+            Your go to for web development
             </h1>
             <div className="line">
               
               </div>
               <p className="description-text">
-                In todays online atmoshpere there are different aspects
-                to web dev and we have those aspects covered.
-                We can integrate our react js front end development
-                with the most popular technologies like wordpress 
-                and shopify to ensure you are working with the industry
-                standards while also standing out.
-                <br/><br/>  For e-commerce solutions, we leverage Shopify to empower your online store. Our integration ensures a secure and scalable platform, enabling smooth transactions and a user-friendly shopping experience. From product listings to checkout processes, we optimize every step to maximize conversion rates and elevate your online business.
-                <br/><br/>  We are also competent with WordPress — the industry's leading content management system. Seamlessly manage your website's content, blogs, and customization. With our expertise, your website becomes a dynamic storytelling platform that engages visitors and keeps them coming back for more.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis laoreet mi, nec sagittis orci. Suspendisse potenti. Integer efficitur, arcu vitae ultrices viverra, orci urna efficitur arcu, a congue lectus sem nec libero.
+                <br/><br/> Nam eu justo ac tortor vestibulum facilisis. Quisque nec diam vitae dui facilisis accumsan vel et massa.
+                <br/><br/> Integer vulputate, arcu vel ultricies ullamcorper, sapien purus pharetra libero, non fermentum ligula tortor vel nisl. Proin nec justo et elit bibendum interdum non eget massa. Duis dapibus odio vitae semper lacinia. Fusce a ante sed arcu imperdiet interdum a in justo. Proin aliquet consectetur sapien vel vestibulum. Vivamus vel sagittis sapien. Nulla facilisi. Sed vel justo nec est rhoncus iaculis id vitae ex. Sed vel justo nec est rhoncus iaculis id vitae ex. Curabitur tincidunt congue lorem, eu fermentum eros facilisis ac.
                 </p> 
 
                       </div>
@@ -111,43 +106,28 @@ const ServiceOverview = () => {
                     We work fast.
                   </h2>
                   <p className="description-text">
-                 Speed is crucial in todays world, our processes
-                 for web design have been cultivated over
-                 countless hours of focused work.
-                 When you hire us, we apply our razor
-                 sharp focus to ensure your product
-                 is delivered quickly with high quality.
+                  Brand growth requires focus, alignment, and a big emphasis on data.
 
+                    Our data and analytics services reflect the most comprehensive strategies available to digital marketers today. This enables our agency partners to achieve the most meaningful results through their hard-earned marketing efforts.
                   </p>
 
                   <h2 className="title-text">
-                    Think outside the box
+                    Ecommerce
                   </h2>
                 
                     <p className="description-text">
-                  With so much content already online, you need a way to stand
-                  out. We have taken a lot of inspiration
-                  from many popular things and along with a strong
-                  art background, have combined all of them
-                  together to make attention grabbing designs
-                  to help you stand out.
+                   We can build you a E commerece store stylishly
+                   and quickly by designing the store with react js
+                   then having shopify
                     </p>
 
                     <h2 className="title-text">
-                         Plan it out
+                          Wordpress
                     </h2>
 
                     <p className="description-text">
-                      We make a plan, and execute it. Simple if you
-                      want to learn more about our tenets of work,
-                      click below
-                      
+                    Our insights solutions target specific marketing use cases for growth, including SEO incrementality, full-funnel optimization, and target setting that help you maximize your investment in data and analytics.
                     </p>
-                    <Link to='/process'>
-                        <button className="button">
-                          Our tenets of work
-                        </button>
-                      </Link>
                 </div>
                
               </div>

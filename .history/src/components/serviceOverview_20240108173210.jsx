@@ -130,7 +130,7 @@ const ServiceOverview = () => {
                   from many popular things and along with a strong
                   art background, have combined all of them
                   together to make attention grabbing designs
-                  to help you stand out.
+                  to help you stand out
                     </p>
 
                     <h2 className="title-text">
@@ -138,16 +138,10 @@ const ServiceOverview = () => {
                     </h2>
 
                     <p className="description-text">
-                      We make a plan, and execute it. Simple if you
-                      want to learn more about our tenets of work,
-                      click below
-                      
+                    Wordpress is one of the most popular content
+                    management systems online, we can manage your
+                    website for you
                     </p>
-                    <Link to='/process'>
-                        <button className="button">
-                          Our tenets of work
-                        </button>
-                      </Link>
                 </div>
                
               </div>

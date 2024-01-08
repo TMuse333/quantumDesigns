@@ -112,11 +112,7 @@ const ServiceOverview = () => {
                   </h2>
                   <p className="description-text">
                  Speed is crucial in todays world, our processes
-                 for web design have been cultivated over
-                 countless hours of focused work.
-                 When you hire us, we apply our razor
-                 sharp focus to ensure your product
-                 is delivered quickly with high quality.
+                 
 
                   </p>
 
@@ -125,12 +121,11 @@ const ServiceOverview = () => {
                   </h2>
                 
                     <p className="description-text">
-                  With so much content already online, you need a way to stand
-                  out. We have taken a lot of inspiration
-                  from many popular things and along with a strong
-                  art background, have combined all of them
-                  together to make attention grabbing designs
-                  to help you stand out.
+                   We can build you a E commerece store stylishly
+                   and quickly by designing the store with react js
+                   then having shopify manage all the payment processing
+                   and other store processes so we can get your product out
+                   there quickly
                     </p>
 
                     <h2 className="title-text">
@@ -138,16 +133,10 @@ const ServiceOverview = () => {
                     </h2>
 
                     <p className="description-text">
-                      We make a plan, and execute it. Simple if you
-                      want to learn more about our tenets of work,
-                      click below
-                      
+                    Wordpress is one of the most popular content
+                    management systems online, we can manage your
+                    website for you
                     </p>
-                    <Link to='/process'>
-                        <button className="button">
-                          Our tenets of work
-                        </button>
-                      </Link>
                 </div>
                
               </div>

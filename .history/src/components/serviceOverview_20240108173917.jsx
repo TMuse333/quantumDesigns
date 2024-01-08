@@ -141,13 +141,10 @@ const ServiceOverview = () => {
                       We make a plan, and execute it. Simple if you
                       want to learn more about our tenets of work,
                       click below
-                      
-                    </p>
-                    <Link to='/process'>
-                        <button className="button">
-                          Our tenets of work
-                        </button>
+                      <Link to='process'>
+                        <button className="button"
                       </Link>
+                    </p>
                 </div>
                
               </div>
