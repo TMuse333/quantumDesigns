@@ -1,0 +1,11 @@
+.tenets-container{
+  
+    width:100vw;
+    height:90vh;
+    margin-top: -2rem;
+}
+
+.foreground {
+    background-image: url(src/images/sandy-bg.png);
+    height:90vw;
+}

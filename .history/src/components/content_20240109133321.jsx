@@ -1,0 +1,154 @@
+import React, {useState,useEffect} from "react";
+import '../styles/content.css'
+import { Link } from "react-router-dom";
+import { motion } from 'framer-motion';
+
+const Content = ({ img, title, description, rev,
+   link, linkText, descriptionIntro, boldTitle,
+    boldDescription,video,objectPosition,id,
+    isAnimated
+ }) => {
+
+  const [animatedDescription, setAnimatedDescription] = useState("");
+
+
+  const makeBold2 = (text, boldWords) => {
+    if (!boldWords) {
+      return text; // Return the original text if boldWords is not provided
+    }
+
+    const words = text.split(' ');
+
+    return words.map((word, index) => (
+      boldWords.includes(word.toLowerCase()) ?
+        <motion.span
+          className="bold-700"
+          key={index}
+          initial={{ fontWeight: 400 }} // Start with regular font-weight
+          animate={{ fontWeight: isAnimated ? 700 : 400 }} // Bold font-weight when isAnimated is true
+          transition={{ duration: 0.2, delay: index * 0.05,ease: [0.16, 1, 0.3, 1] }}
+        >
+          {word}{' '}
+        </motion.span>
+        :
+        `${word} `
+    ));
+  };
+
+
+
+  const handleAnimationComplete = () => {
+    console.log('animation completed!')
+   
+  }
+
+  const animations = {
+    base: {
+      animation: { opacity: 0 },
+      animate: { opacity: 1 },
+    },
+    rotate: {
+      animation: { rotateY: 80 },
+      animate: { rotateY: 0 },
+    },
+  };
+
+  useEffect(() => {
+    if (isAnimated) {
+      const boldedDescription = makeBold2(description, boldDescription); // Replace with your bold words
+      setTimeout(() => {
+        setAnimatedDescription(boldedDescription);
+      }, 1100); // Delay of 4 seconds
+    }
+  }, [isAnimated, description]);
+
+  return (
+    <motion.div className={`content-container`} id={id}>
+      <h1 className="title-text">
+        {makeBold2(title, boldTitle)}
+      </h1>
+      <motion.div
+        className={`image-text-box ${rev ? 'reverse' : ''}`}
+        variants={{
+          ...animations.base,
+          ...animations.rotate,
+        }}
+        initial={{
+          ...animations.base.animation,
+          ...animations.rotate.animation,
+        }}
+        animate={
+          isAnimated
+            ? { ...animations.base.animate, ...animations.rotate.animate }
+            : {}
+        }
+        transition={{ duration: 0.8, ease: 'linear' }}
+      >
+        {rev ? (
+          <div className="description-box">
+            {title && <h2 className="title-text">{descriptionIntro}</h2>}
+            <p className='description-text'>
+              {makeBold2(description, boldDescription)}
+              <br/>
+              {link != null && (
+                <Link to={link}>
+                  <button className="button">{linkText}</button>
+                </Link>
+              )}
+            </p>
+          </div>
+        ) : null}
+        <div className="image-box">
+          {video ? (
+            <video controls className='content-video'>
+              <source src={img} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          ) : (
+            <img
+              src={img}
+              loading="lazy"
+              className='content-image'
+              style={{
+                objectPosition: objectPosition,
+              }}
+            />
+          )}
+        </div>
+        {rev ? null : (
+          <div className="description-box">
+            <h2 className="title-text">
+              {makeBold2(descriptionIntro, boldTitle)}
+            </h2>
+            <motion.p
+              initial={isAnimated ? { opacity: 0, x: 200 } : null}
+              animate={
+                isAnimated
+                  ? { opacity: 1, x: 0 }
+                  : { opacity: 1, x: 0 } // No animations when isAnimated is null
+              }
+              transition={{
+                delay: isAnimated ? 1 : 0, // Delay only when isAnimated is true
+                duration: 0.2,
+                when: 'beforeChildren',
+              }}
+              className='description-text'
+              onAnimationComplete={handleAnimationComplete}
+            >
+              {animatedDescription || description}
+              <br />
+              {link != null && (
+                <Link to={link}>
+                  <button className='button'>{linkText}</button>
+                </Link>
+              )}
+            </motion.p>
+          </div>
+        )}
+      </motion.div>
+    </motion.div>
+  );
+  
+}
+
+export default Content;

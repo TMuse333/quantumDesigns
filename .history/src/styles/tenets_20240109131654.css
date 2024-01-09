@@ -1,0 +1,23 @@
+.tenets-container{
+  
+    width:100vw;
+ 
+}
+
+.foreground {
+    background-image: url(src/images/sandy-bg.png);
+    height:90vw;
+}
+
+.foreground .title-text{
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+.underground {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(73, 50, 7);
+    /* height:30vh; */
+}

@@ -1,0 +1,16 @@
+.tenets-container{
+  
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+margin-right: auto;
+background-image: url(src/images/sandy-bg.png);
+    
+ 
+}
+
+
+.tenets-container .title-text{
+    position: relative;
+}
+
