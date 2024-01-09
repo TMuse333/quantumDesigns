@@ -1,0 +1,38 @@
+.tenet-star-container{
+    width:100vw;
+    position: relative;
+    height:600px;
+    background-color: var(--primary-color);
+}
+
+
+.first-row{
+    display: flex;
+}
+
+.tenet{
+    width:200px;
+    
+    
+}
+
+.third-row{
+    z-index: 32;
+    display: flex;
+    /* margin:0;
+    position: absolute;
+ bottom: 0%; */
+}
+
+
+
+.tenet-button{
+    height:100px;
+    justify-content: center;
+    font-size: 2rem;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+
