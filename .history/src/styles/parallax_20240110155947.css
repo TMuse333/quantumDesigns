@@ -1,0 +1,20 @@
+.parallax-container{
+    height:100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+}
+
+.parallax-header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    height:100%;
+    z-index: -1;
+}
+
+
+.background,
+.foreground
