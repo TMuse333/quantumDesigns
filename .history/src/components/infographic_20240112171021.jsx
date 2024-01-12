@@ -109,8 +109,7 @@ const Infographic = () => {
         height: expandedIndices.includes(index) ? '450px' : '230px',
         transition: 'all 0.3s ease-in',
         overflow: 'scroll',
-        transform: isHovered === index 
-        && !expandedIndices.includes(index) ? 'scale(1.2)' : 'scale(1)'
+        transform: isHovered === index ? 'scale(1.3)' : 'scale(1)'
       };
     };
   
@@ -195,8 +194,7 @@ const Infographic = () => {
           {activeDesignAdvantages
             ? designAdvantages.points.map((design, index) => (
               <div
-              onMouseEnter={()=>handleMouseEnter(index)}
-          onMouseLeave={()=>handleMouseLeave(index)}
+              
                 key={index}
                 style={contentStyle(index)}
                 className={`content ${expandedIndices.includes(index) ? 'expanded' : ''}`}

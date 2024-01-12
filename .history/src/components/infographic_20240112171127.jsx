@@ -110,7 +110,7 @@ const Infographic = () => {
         transition: 'all 0.3s ease-in',
         overflow: 'scroll',
         transform: isHovered === index 
-        && !expandedIndices.includes(index) ? 'scale(1.2)' : 'scale(1)'
+        && ? 'scale(1.2)' : 'scale(1)'
       };
     };
   

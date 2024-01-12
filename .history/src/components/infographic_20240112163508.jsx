@@ -5,7 +5,7 @@ import Navbar from './navbar';
 import Typed from 'typed.js';
 import { Link } from "react-router-dom";
 import Footer from "./footer";
-import { motion,AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { designAdvantages, performanceAdvantages } from "../componentData/data";
 import abu from '../images/aboubacar-5-fire.png';
 
@@ -13,7 +13,6 @@ const Infographic = () => {
     const [isAnimated, setIsAnimated] = useState(false);
     const [expandedIndices, setExpandedIndices] = useState([]);
     const [activeDesignAdvantages, setActiveDesignAdvantages] = useState(true);
-    const [isHovered, setIsHovered] = useState(null)
   
     const handleContentClick = (index) => {
       setExpandedIndices((prevIndices) =>
@@ -40,26 +39,15 @@ const Infographic = () => {
         typed.destroy();
       };
     }, []);
-
-
-    const handleMouseEnter = (index) => {
-        setIsHovered(index)
-        console.log('mouse entered!')
-    }
-
-    const handleMouseLeave = () => {
-        setIsHovered(null)
-    }
   
     const style = {
       opacity: isAnimated ? 1 : 0,
-      transition: 'opacity 0.3s ease-in',
-     
+      transition: 'opacity 0.3s ease-in'
     };
   
     const imageAnimation = {
       hidden: {
-        x: activeDesignAdvantages ? 200 : -200,
+        x: -200,
         rotateY: 100,
         z: -1000,
         opacity: 0,
@@ -76,18 +64,12 @@ const Infographic = () => {
   
     const textAnimation = {
       hidden: {
-        opacity: 0,
-        transition:{
-                  ease:'ease-in',
-          duration:'0.3'
-        }
+        opacity: 0
       },
       visible: {
         opacity: 1,
         transition: {
-          delay: 0.5,
-        //   ease:'ease-in',
-        //   duration:'0.3'
+          delay: 0.5
         }
       }
     };
@@ -108,9 +90,7 @@ const Infographic = () => {
       return {
         height: expandedIndices.includes(index) ? '450px' : '230px',
         transition: 'all 0.3s ease-in',
-        overflow: 'scroll',
-        transform: isHovered === index 
-        && !expandedIndices.includes(index) ? 'scale(1.2)' : 'scale(1)'
+        overflow: 'scroll'
       };
     };
   
@@ -144,21 +124,10 @@ const Infographic = () => {
   
         <div className="info-image-box">
           <div className="info-image">
-            
-
-
-
             <motion.img
-            key={activeDesignAdvantages ? 'designs' : 'performance'}
               variants={imageAnimation}
               initial="hidden"
               animate={isAnimated ? "visible" : "hidden"}
-              exit={{
-                opacity:0,
-                transition:{
-                    delay:0.5
-                }
-              }}
               src={activeDesignAdvantages ? designAdvantages.image : performanceAdvantages.image}
               style={{
                 width: '250px',
@@ -166,37 +135,24 @@ const Infographic = () => {
             />
           </div>
           <motion.div
-          key={activeDesignAdvantages ? 'design' : 'performance'}
             variants={textAnimation}
             initial="hidden"
             animate={isAnimated ? "visible" : "hidden"}
             className="info-description"
-            exit={{
-                opacity:0,
-                transition: { duration: 0.3, ease: 'ease-in' }, 
-            }}
           >
             <p className="description-text">{activeDesignAdvantages ? designAdvantages.description : performanceAdvantages.description}</p>
           </motion.div>
         </div>
-
-        <p className="description-text direction-text">
-            click to expand!
-        </p>
   
         <motion.div
-         key={activeDesignAdvantages ? 'design' : 'performance'}
           variants={boxAnimation}
           initial="hidden"
           animate={isAnimated ? "visible" : "hidden"}
           className="info-content"
-          
         >
           {activeDesignAdvantages
             ? designAdvantages.points.map((design, index) => (
               <div
-              onMouseEnter={()=>handleMouseEnter(index)}
-          onMouseLeave={()=>handleMouseLeave(index)}
                 key={index}
                 style={contentStyle(index)}
                 className={`content ${expandedIndices.includes(index) ? 'expanded' : ''}`}

@@ -13,7 +13,7 @@ const Infographic = () => {
     const [isAnimated, setIsAnimated] = useState(false);
     const [expandedIndices, setExpandedIndices] = useState([]);
     const [activeDesignAdvantages, setActiveDesignAdvantages] = useState(true);
-    const [isHovered, setIsHovered] = useState(null)
+    const [isHovered, setIsHovered] = useState(false)
   
     const handleContentClick = (index) => {
       setExpandedIndices((prevIndices) =>
@@ -42,19 +42,18 @@ const Infographic = () => {
     }, []);
 
 
-    const handleMouseEnter = (index) => {
-        setIsHovered(index)
-        console.log('mouse entered!')
+    const handleMouseEnter = () => {
+        setIsHovered(true)
     }
 
     const handleMouseLeave = () => {
-        setIsHovered(null)
+        setIsHovered(false)
     }
   
     const style = {
       opacity: isAnimated ? 1 : 0,
       transition: 'opacity 0.3s ease-in',
-     
+      transform: isHovered ? 'scale(1.3)' : 'scale(1)'
     };
   
     const imageAnimation = {
@@ -108,9 +107,7 @@ const Infographic = () => {
       return {
         height: expandedIndices.includes(index) ? '450px' : '230px',
         transition: 'all 0.3s ease-in',
-        overflow: 'scroll',
-        transform: isHovered === index 
-        && !expandedIndices.includes(index) ? 'scale(1.2)' : 'scale(1)'
+        overflow: 'scroll'
       };
     };
   
@@ -195,8 +192,6 @@ const Infographic = () => {
           {activeDesignAdvantages
             ? designAdvantages.points.map((design, index) => (
               <div
-              onMouseEnter={()=>handleMouseEnter(index)}
-          onMouseLeave={()=>handleMouseLeave(index)}
                 key={index}
                 style={contentStyle(index)}
                 className={`content ${expandedIndices.includes(index) ? 'expanded' : ''}`}

@@ -272,7 +272,7 @@ export const designAdvantages = {
 
 export const performanceAdvantages = {
 
-  image:'src/images/aboubacar-5-fire.png',
+  image:''../images/aboubacar-5-fire.png'',
 
   description:' faster faster ipsum dolor sit amet, consectetur adipisicing elit.'+
  ' Quo, incidunt. '+ 

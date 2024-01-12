@@ -272,11 +272,6 @@ export const designAdvantages = {
 
 export const performanceAdvantages = {
 
-  image:'src/images/aboubacar-5-fire.png',
-
-  description:' faster faster ipsum dolor sit amet, consectetur adipisicing elit.'+
- ' Quo, incidunt. '+ 
- ' Reiciendis assumenda qui doloribus earum laborum iure aperiam, aut sapiente rem, iusto maxime, eum quam exercitationem aliquam nisi? Saepe facere est dolore, fugit beatae nihil eius? Nesciunt accusamus excepturi illo nemo, totam dolores repellendus, quaerat sunt itaque officia, impedit dolorem!',
 
   points:[
 

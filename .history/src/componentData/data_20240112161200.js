@@ -232,12 +232,9 @@ export const serviceOfferings = [
 
 export const designAdvantages = {
 
-  image:'src/images/q3-visuals-logo-2-no-bg.png',
-
   description:' Lorem ipsum dolor sit amet, consectetur adipisicing elit.'+
- ' Quo, incidunt. '+ 
- ' Reiciendis assumenda qui doloribus earum laborum iure aperiam, aut sapiente rem, iusto maxime, eum quam exercitationem aliquam nisi? Saepe facere est dolore, fugit beatae nihil eius? Nesciunt accusamus excepturi illo nemo, totam dolores repellendus, quaerat sunt itaque officia, impedit dolorem!',
-
+ ' Quo, incidunt. ' 
+  Reiciendis assumenda qui doloribus earum laborum iure aperiam, aut sapiente rem, iusto maxime, eum quam exercitationem aliquam nisi? Saepe facere est dolore, fugit beatae nihil eius? Nesciunt accusamus excepturi illo nemo, totam dolores repellendus, quaerat sunt itaque officia, impedit dolorem!'
 
   points:[
     {
@@ -270,17 +267,7 @@ export const designAdvantages = {
 };
 
 
-export const performanceAdvantages = {
-
-  image:'src/images/aboubacar-5-fire.png',
-
-  description:' faster faster ipsum dolor sit amet, consectetur adipisicing elit.'+
- ' Quo, incidunt. '+ 
- ' Reiciendis assumenda qui doloribus earum laborum iure aperiam, aut sapiente rem, iusto maxime, eum quam exercitationem aliquam nisi? Saepe facere est dolore, fugit beatae nihil eius? Nesciunt accusamus excepturi illo nemo, totam dolores repellendus, quaerat sunt itaque officia, impedit dolorem!',
-
-  points:[
-
-  
+export const performanceAdvantages = [
   {
     name: 'Granular Control',
     description: `One of the primary advantages of using ReactJS is the granular control it provides over the building blocks of your website. Unlike traditional templates, React enables you to create modular components. Each component serves a specific purpose and can be optimized individually, allowing for targeted improvements.`,
@@ -305,8 +292,7 @@ export const performanceAdvantages = {
     name: 'SEO-Friendly Single Page Applications (SPA)',
     description: `React enables the creation of Single Page Applications, which can be highly beneficial for SEO. With server-side rendering (SSR) and tools like Next.js, you can ensure that search engines easily index your content, improving your website's visibility.`,
   },
-  ]
-}
+];
 
 
 

@@ -10,12 +10,6 @@ overflow-x: hidden;
 
 .after-intro{
     margin-bottom: -3rem;
-
-}
-
-.direction-text{
-    margin-top: -1rem;
-    font-size: 1.5rem;
 }
 
 .info-header{
@@ -26,7 +20,7 @@ overflow-x: hidden;
     margin-bottom: -8rem;
 }
 
-.infographic-intro .description-text {
+.infographic-intro .description-text, .-text {
     background-color: #01384b;
     width: 80vw;
     margin-left: auto;

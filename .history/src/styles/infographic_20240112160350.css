@@ -10,12 +10,6 @@ overflow-x: hidden;
 
 .after-intro{
     margin-bottom: -3rem;
-
-}
-
-.direction-text{
-    margin-top: -1rem;
-    font-size: 1.5rem;
 }
 
 .info-header{
@@ -26,28 +20,13 @@ overflow-x: hidden;
     margin-bottom: -8rem;
 }
 
-.infographic-intro .description-text {
-    background-color: #01384b;
-    width: 80vw;
+.infographic-intro .description-text{
+    background-color:#01384b;
+    width:80vw;
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
-    padding: 2rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a subtle box shadow for depth */
-    position: relative;
-    overflow: hidden;
-}
-
-.infographic-intro .description-text::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    /* background: linear-gradient(45deg, #003366, #0066cc);  */
-    z-index: -1;
-    top: 0;
-    left: 0;
-    border-radius: 10px;
+    padding:2rem;
 }
 
 
