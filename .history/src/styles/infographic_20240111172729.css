@@ -1,0 +1,104 @@
+.infographic-container{
+    width:100vw;
+    position: absolute;
+    top:0;
+    left: 0;
+    background: radial-gradient(circle at center, #00bfff, #01384b);
+overflow-x: hidden;
+
+}
+
+.info-image-box .description-text{
+    background-color: #015876;
+    background-image: 
+    linear-gradient(90deg, transparent 1px, rgba(255, 255, 255, 0.1) 1px),
+    linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+    repeating-linear-gradient(90deg, transparent, transparent 10px, rgba(255, 255, 255, 0.1) 10px, rgba(255, 255, 255, 0.1) 20px);
+  background-size: 10px 1px, 1px 10px, 100% 20px;
+  
+}
+
+.content{
+    background-color: #015876;
+    position: relative;
+    /* border-right: 5px solid #00bfff;
+    border-top:5px solid #00bfff ; */
+}
+
+.content .description-text{
+    padding-bottom: 2rem;
+}
+
+.content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 25%;
+    border-left: 5px solid #00bfff;
+    border-top: 5px solid #00bfff;
+
+    box-sizing: border-box; /* Ensure border is included in the width and height calculations */
+  }
+
+  .content::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 20%;
+    height: 25%;
+    border-right: 5px solid #00bfff;
+    border-bottom: 5px solid #00bfff;
+    box-sizing: border-box;
+  }
+
+
+  @media screen and (min-width:655px){
+    .infographic-container{
+        
+    }
+
+    .info-content{
+       
+    
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr ;
+        /* gap:5rem; */
+       
+
+    }
+
+    .content{
+        width:20vw;
+        /* height:30vh; */
+        margin-bottom: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+    .info-image-box{
+        display: flex;
+        align-items: center;
+    }
+
+    .info-image-box .description-text{
+        width:40vw;
+        margin-left: auto;
+        margin-right: 1rem;
+        padding:2rem;
+        border-radius: 40%;
+        height:30vw;
+        
+        
+    }
+
+    .info-image{
+        width:50vw;
+        background-color: #01384b;
+    }
+
+ 
+  }
