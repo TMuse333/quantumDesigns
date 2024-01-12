@@ -114,21 +114,16 @@ const Infographic = () => {
   
     const boxAnimation = {
         hidden: {
-        //   x: activeDesignAdvantages ? 200 : -200,
+          x: activeDesignAdvantages ? 200 : -200,
           opacity: 0,
-          transition: {
-            duration:2.5,
-            delay: 0.1,
-            opacity: { duration: 1.6, ease: "easeIn" },
-          },
         },
         visible: {
           x: 0,
           opacity: 1,
           transition: {
-            duration:2.5,
+            duration:0.6,
             delay: 0.1,
-            opacity: { duration: 1.6, ease: "easeIn" },
+            opacity: { duration: 1, ease: "easeIn" },
           },
         },
       };

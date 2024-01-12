@@ -109,16 +109,9 @@ overflow-x: hidden;
 margin-top: -4.5rem;
 margin-bottom: 2rem;
  
-animation: bounce 2s infinite;
-}
+  }
 
-.dark-button{
-    border-color: #005e7d;
-    color:#005e7d;
-}
-
-.dark-button:hover{
-    background-color:#005e7d ;
+  animation: bounce 2s infinite;
 }
 
 @keyframes bounce {
@@ -133,21 +126,19 @@ animation: bounce 2s infinite;
   }
 }
 
-  
-
   /* Define the oscillating animation */
-  @keyframes glow {
+@keyframes oscillate {
     0%, 100% {
-      box-shadow: 0 0 10px #004055;
+      transform: scale(1);
     }
     50% {
-      box-shadow: 0 0 40px #004055;
+      transform: scale(1.2);
     }
   }
   
   /* Apply the oscillating animation to elements with the 'oscillate' class */
   .oscillate {
-    animation: glow 1.89s infinite;
+    animation: oscillate 2s infinite;
   }
   
 

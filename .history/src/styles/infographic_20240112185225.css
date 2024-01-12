@@ -117,10 +117,6 @@ animation: bounce 2s infinite;
     color:#005e7d;
 }
 
-.dark-button:hover{
-    background-color:#005e7d ;
-}
-
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
     transform: translateY(0);

@@ -105,49 +105,25 @@ overflow-x: hidden;
   }
 
   .scroll-down-indicator{
-    font-size: 2rem;
-margin-top: -4.5rem;
-margin-bottom: 2rem;
+    position: relative;
+    top:10%;
+    z-index:2;
  
-animation: bounce 2s infinite;
-}
-
-.dark-button{
-    border-color: #005e7d;
-    color:#005e7d;
-}
-
-.dark-button:hover{
-    background-color:#005e7d ;
-}
-
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
   }
-  40% {
-    transform: translateY(-10px);
-  }
-  60% {
-    transform: translateY(-5px);
-  }
-}
-
-  
 
   /* Define the oscillating animation */
-  @keyframes glow {
+@keyframes oscillate {
     0%, 100% {
-      box-shadow: 0 0 10px #004055;
+      transform: scale(1);
     }
     50% {
-      box-shadow: 0 0 40px #004055;
+      transform: scale(1.2);
     }
   }
   
   /* Apply the oscillating animation to elements with the 'oscillate' class */
   .oscillate {
-    animation: glow 1.89s infinite;
+    animation: oscillate 2s infinite;
   }
   
 

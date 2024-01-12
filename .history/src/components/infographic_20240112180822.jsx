@@ -8,16 +8,13 @@ import Footer from "./footer";
 import { motion,AnimatePresence } from "framer-motion";
 import { designAdvantages, performanceAdvantages } from "../componentData/data";
 import abu from '../images/aboubacar-5-fire.png';
-import { FaArrowDown } from 'react-icons/fa';
-// import '../styles/ScrollDownIndicator.css';
 
 const Infographic = () => {
     const [isAnimated, setIsAnimated] = useState(false);
     const [expandedIndices, setExpandedIndices] = useState([]);
     const [activeDesignAdvantages, setActiveDesignAdvantages] = useState(true);
     const [isHovered, setIsHovered] = useState(null)
-    const [isLogoVisible, setIsLogoVisible] = useState(true);
-    const [expandHidden, setExpandHidden] = useState(false)
+  
     const handleContentClick = (index) => {
       setExpandedIndices((prevIndices) =>
         prevIndices.includes(index)
@@ -28,7 +25,7 @@ const Infographic = () => {
   
     useEffect(() => {
       var typed = new Typed('.future-text.info-header', {
-        strings: ["Powerful, one of a kind websites"],
+        strings: ["Powerful and one of a kind websites"],
         typeSpeed: 35,
         backSpeed: 30,
         showCursor: false,
@@ -43,23 +40,6 @@ const Infographic = () => {
         typed.destroy();
       };
     }, []);
-
-
-    useEffect(() => {
-        const handleScroll = () => {
-          const scrollPosition = window.scrollY;
-          const threshold = 100; // Adjust this threshold based on when you want the logo to disappear
-    
-          setIsLogoVisible(scrollPosition <= threshold);
-        };
-    
-        window.addEventListener('scroll', handleScroll);
-    
-        return () => {
-          window.removeEventListener('scroll', handleScroll);
-        };
-      }, []);
-    
 
 
     const handleMouseEnter = (index) => {
@@ -113,48 +93,28 @@ const Infographic = () => {
     };
   
     const boxAnimation = {
-        hidden: {
-        //   x: activeDesignAdvantages ? 200 : -200,
-          opacity: 0,
-          transition: {
-            duration:2.5,
-            delay: 0.1,
-            opacity: { duration: 1.6, ease: "easeIn" },
-          },
-        },
-        visible: {
-          x: 0,
-          opacity: 1,
-          transition: {
-            duration:2.5,
-            delay: 0.1,
-            opacity: { duration: 1.6, ease: "easeIn" },
-          },
-        },
-      };
-      
+      hidden: {
+        opacity: 0
+      },
+      visible: {
+        opacity: 1,
+        transition: {
+          delay: 0.8
+        }
+      }
+    };
   
   
   const contentStyle = (index) => {
     return {
       height: expandedIndices.includes(index) ? '450px' : '230px',
       transition: 'all 0.3s ease-in',
-      overflow:  expandedIndices.includes(index) ? 'scroll' : 'hidden',
+      overflow: 'scroll',
     //   animation: isHovered === index && !expandedIndices.includes(index) ? 'oscillate 0.5s infinite' : 'none',
     };
   };
-
-  const logoStyle = {
-    opacity: isLogoVisible ? 1 : 0,
-    transition: 'all 0.3s ease-in'
-  }
-
-const expandStyle = {
-    opacity: expandedIndices.length === 0  && !expandHidden ?  1 : 0,
-    transition: 'all 0.3s ease-in'
-}  
   
-      console.log(expandedIndices)
+      
   
     const handleToggle = () => {
       setExpandedIndices([]); // Reset expanded indices when toggling
@@ -167,10 +127,8 @@ const expandStyle = {
   
         <div className="infographic-intro">
           <h1 className="future-text info-header">
-            Powerful, one of a kind websites
+            Powerful and one of a kind websites
           </h1>
-
-
   
           <p style={style} className="description-text afer-intro">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem laborum expedita vero, enim error aut recusandae voluptate accusamus debitis provident aliquid porro praesentium doloremque possimus dicta corrupti, iste, repellendus saepe veniam harum quaerat. Eaque modi fuga et, facilis in nobis deleniti sed nam laudantium voluptates, est minima pariatur reprehenderit iusto.
@@ -185,8 +143,6 @@ const expandStyle = {
             </button>
           </div>
         </div>
-
-
   
         <div className="info-image-box">
           <div className="info-image">
@@ -226,30 +182,16 @@ const expandStyle = {
           </motion.div>
         </div>
 
-        <div className="scroll-down-indicator"
-        style={logoStyle}>
-      <FaArrowDown />
-    </div>
-
-        <p className="description-text direction-text
-        oscillate"
-        style={expandStyle}>
+        <p className="description-text direction-text">
             click to expand!
         </p>
-  <AnimatePresence mode='wait'>
-
-
+  
         <motion.div
          key={activeDesignAdvantages ? 'design' : 'performance'}
           variants={boxAnimation}
           initial="hidden"
           animate={isAnimated ? "visible" : "hidden"}
           className={'info-content'}
-          exit={{
-            transition:'all 0.3s ease in'
-          }
-           
-          }
           
         >
           {activeDesignAdvantages
@@ -259,12 +201,8 @@ const expandStyle = {
           onMouseLeave={()=>handleMouseLeave(index)}
                 key={index}
                 style={contentStyle(index)}
-                className={`content ${isHovered === index && !expandedIndices.includes(index) ? 'oscillate' : ''}`}
-
-                onClick={() => {
-                    handleContentClick(index);
-                   setExpandHidden(true)
-                  }}
+                className={`content`}
+                onClick={() => handleContentClick(index)}
               >
                 <img src={logo} style={{ width: '100px' }} alt={`Logo ${index}`} />
                 <h3>{design.name}</h3>
@@ -275,12 +213,8 @@ const expandStyle = {
               <div
                 key={index}
                 style={contentStyle(index)}
-                className={`content ${isHovered === index && !expandedIndices.includes(index) ? 'oscillate' : ''}`}
-
-                onClick={() => {
-                    handleContentClick(index);
-                   setExpandHidden(true)
-                  }}
+                className={`content`}
+                onClick={() => handleContentClick(index)}
               >
                 <img src={logo} style={{ width: '100px' }} alt={`Logo ${index}`} />
                 <h3>{performance.name}</h3>
@@ -288,18 +222,6 @@ const expandStyle = {
               </div>
             ))}
         </motion.div>
-        </AnimatePresence>
-
-        <div className="advantage-selector">
-            <button className="dark-button button"
-            onClick={() => setActiveDesignAdvantages(true)}>
-              Design
-            </button>
-            <button className="dark-button button"
-            onClick={() => setActiveDesignAdvantages(false)}>
-              Performance
-            </button>
-          </div>
   
         <div className="closing-container">
           <p className="description-text level">It's time to level up</p>

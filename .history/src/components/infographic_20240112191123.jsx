@@ -116,11 +116,6 @@ const Infographic = () => {
         hidden: {
         //   x: activeDesignAdvantages ? 200 : -200,
           opacity: 0,
-          transition: {
-            duration:2.5,
-            delay: 0.1,
-            opacity: { duration: 1.6, ease: "easeIn" },
-          },
         },
         visible: {
           x: 0,

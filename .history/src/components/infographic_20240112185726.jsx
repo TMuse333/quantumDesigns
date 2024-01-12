@@ -114,25 +114,17 @@ const Infographic = () => {
   
     const boxAnimation = {
         hidden: {
-        //   x: activeDesignAdvantages ? 200 : -200,
-          opacity: 0,
-          transition: {
-            duration:2.5,
-            delay: 0.1,
-            opacity: { duration: 1.6, ease: "easeIn" },
+            x: activeDesignAdvantages ? 200 : -200,
+           
+            opacity: 0,
           },
-        },
-        visible: {
-          x: 0,
-          opacity: 1,
-          transition: {
-            duration:2.5,
-            delay: 0.1,
-            opacity: { duration: 1.6, ease: "easeIn" },
-          },
-        },
-      };
-      
+      visible: {
+        opacity: 1,
+        transition: {
+          delay: 0.5
+        }
+      }
+    };
   
   
   const contentStyle = (index) => {
@@ -236,9 +228,7 @@ const expandStyle = {
         style={expandStyle}>
             click to expand!
         </p>
-  <AnimatePresence mode='wait'>
-
-
+  
         <motion.div
          key={activeDesignAdvantages ? 'design' : 'performance'}
           variants={boxAnimation}
@@ -288,7 +278,6 @@ const expandStyle = {
               </div>
             ))}
         </motion.div>
-        </AnimatePresence>
 
         <div className="advantage-selector">
             <button className="dark-button button"
