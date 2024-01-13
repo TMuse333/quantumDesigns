@@ -114,19 +114,23 @@ const Infographic = () => {
   
     const boxAnimation = {
         hidden: {
-            // x: activeDesignAdvantages ? 200 : -200,
-            // rotateY: 100,
-            // z: -1000,
-            // opacity: 0,
+        //   x: activeDesignAdvantages ? 200 : -200,
+          opacity: 0,
+          transition: {
+            duration:2.5,
+            delay: 0.1,
+            opacity: { duration: 1.6, ease: "easeIn" },
           },
-          visible: {
-            // x: 0,
-            // rotateY: 0,
-            // opacity: 1,
-            // transition: {
-            //   duration: 0.5,
-            // },
+        },
+        visible: {
+          x: 0,
+          opacity: 1,
+          transition: {
+            duration:2.5,
+            delay: 0.1,
+            opacity: { duration: 1.6, ease: "easeIn" },
           },
+        },
       };
       
   
@@ -228,88 +232,70 @@ const expandStyle = {
     </div>
 
         <p className="description-text direction-text
-        oscillate"
+        "
         style={expandStyle}>
             click to expand!
         </p>
-  <AnimatePresence mode='wait'>
+        <>
+  <AnimatePresence exitBeforeEnter>
+    {activeDesignAdvantages && (
+      <motion.div
+        key="design"
+        variants={boxAnimation}
+        initial="hidden"
+        animate={isAnimated ? "visible" : "hidden"}
+        exit="hidden"
+        className={'info-content'}
+      >
+        {designAdvantages.points.map((design, index) => (
+          <div
+            key={index}
+            style={contentStyle(index)}
+            className={`content ${isHovered === index && !expandedIndices.includes(index) ? 'oscillate' : ''}`}
+            onClick={() => {
+              handleContentClick(index);
+              setExpandHidden(true);
+            }}
+          >
+            <img src={logo} style={{ width: '100px' }} alt={`Logo ${index}`} />
+            <h3>{design.name}</h3>
+            {expandedIndices.includes(index) && <p className="description-text">{design.description}</p>}
+          </div>
+        ))}
+      </motion.div>
+    )}
+  </AnimatePresence>
 
+  <AnimatePresence exitBeforeEnter>
+    {!activeDesignAdvantages && (
+      <motion.div
+        key="performance"
+        variants={boxAnimation}
+        initial="hidden"
+        animate={isAnimated ? "visible" : "hidden"}
+        exit="hidden"
+        className={'info-content'}
+      >
+        {performanceAdvantages.points.map((performance, index) => (
+          <div
+            key={index}
+            style={contentStyle(index)}
+            className={`content ${isHovered === index && !expandedIndices.includes(index) ? 'oscillate' : ''}`}
+            onClick={() => {
+              handleContentClick(index);
+              setExpandHidden(true);
+            }}
+          >
+            <img src={logo} style={{ width: '100px' }} alt={`Logo ${index}`} />
+            <h3>{performance.name}</h3>
+            {expandedIndices.includes(index) && <p className="description-text">{performance.description}</p>}
+          </div>
+        ))}
+      </motion.div>
+    )}
+  </AnimatePresence>
+</>
 
-        <motion.div
-         key={activeDesignAdvantages ? 'design' : 'performance'}
-          variants={boxAnimation}
-          initial="hidden"
-          animate={isAnimated ? "visible" : "hidden"}
-          className={'info-content'}
-          exit={{
-            transition:'all 0.3s ease in'
-          }
-           
-          }
-          
-        >
-          {activeDesignAdvantages
-            ? designAdvantages.points.map((design, index) => (
-              <div
-              onMouseEnter={()=>handleMouseEnter(index)}
-          onMouseLeave={()=>handleMouseLeave(index)}
-                key={index}
-                style={contentStyle(index)}
-                className={`content ${isHovered === index && !expandedIndices.includes(index) ? 'oscillate' : ''}`}
-
-                onClick={() => {
-                    handleContentClick(index);
-                   setExpandHidden(true)
-                  }}
-              >
-                <motion.img src={design.image}
-                 style={{ width: '100px' }} 
-                 alt={`Logo ${index}`}
-                 initial={{ opacity: 0, }}
-                 animate={{ opacity: 1 }}
-                 exit={{ opacity: 0, transition: { duration: 0.4, ease: 'easeOut' } }}
-                  />
-                <motion.h3
-                 initial={{ opacity: 0, }}
-                 animate={{ opacity: 1}}
-                 exit={{ opacity: 0, transition: { duration: 0.4, ease: 'easeOut' } }}>{design.name}</motion.h3>
-                {expandedIndices.includes(index) &&
-                  <p
-                  className="description-text"
-                 
-                >
-                    {design.description}
-                  </p>}
-              </div>
-            ))
-            : performanceAdvantages.points.map((performance, index) => (
-              <div
-                key={index}
-                style={contentStyle(index)}
-                className={`content ${isHovered === index && !expandedIndices.includes(index) ? 'oscillate' : ''}`}
-
-                onClick={() => {
-                    handleContentClick(index);
-                   setExpandHidden(true)
-                  }}
-              >
-                <motion.img
-                initial={{ opacity: 0, }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0, transition: { duration: 0.4, ease: 'easeOut' } }}
-                 src={performance.image} style={{ width: '100px' }} alt={`Logo ${index}`} />
-                <motion.h3
-                 initial={{ opacity: 0, }}
-                 animate={{ opacity: 1 }}
-                 exit={{ opacity: 0, transition: { duration: 0.4, ease: 'easeOut' } }}
-                 >
-                    {performance.name}
-                 </motion.h3>
-                {expandedIndices.includes(index) && <p className="description-text">{performance.description}</p>}
-              </div>
-            ))}
-        </motion.div>
-        </AnimatePresence>
 
         <div className="advantage-selector">
             <button className="dark-button button"

@@ -122,11 +122,9 @@ animation: bounce 2s infinite;
 }
 
 .bottom{
-    position: absolute;
+    /* position: absolute;
     top:0%;
-    left:5%;
-    gap:8rem;
-    
+    left:5%; */
     
 }
 

@@ -256,17 +256,15 @@ export const designAdvantages = {
       description: `Unlock the potential of your website with captivating 3D models. We can create unique 3D renditions of your logo, ensuring your site stands out with visual allure.`,
     },
     {
-      image:'src/images/q3-visuals-logo-2-no-bg.png',
+      
       name: 'Dynamic Content Rendering',
       description: `React enables dynamic content rendering for user-specific, real-time updates. Personalize the user experience with smooth and instantaneous changes, going beyond traditional static templates.`,
     },
     {
-      image:'src/images/q3-visuals-logo-2-no-bg.png',
       name: 'Efficient State Management',
       description: `React's efficient state management ensures a seamless and predictable user interface. With features like hooks and context API, handling and updating application state becomes intuitive and streamlined.`,
     },
     {
-      image:'src/images/q3-visuals-logo-2-no-bg.png',
       name: 'Reusable Components',
       description: `Leverage React's component-based architecture to create reusable and modular UI elements. This not only accelerates development but also maintains consistency and ease of maintenance across your application.`,
     },

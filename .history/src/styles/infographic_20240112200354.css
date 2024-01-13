@@ -3,7 +3,7 @@
     position: absolute;
     top:0;
     left: 0;
-    background: radial-gradient(circle at center, #00bfff, #01384b);
+    /* background: radial-gradient(circle at center, #00bfff, #01384b); */
 overflow-x: hidden;
 
 }

@@ -264,11 +264,7 @@ const expandStyle = {
               >
                 <motion.img src={design.image}
                  style={{ width: '100px' }} 
-                 alt={`Logo ${index}`}
-                 initial={{ opacity: 0, }}
-                 animate={{ opacity: 1 }}
-                 exit={{ opacity: 0, transition: { duration: 0.4, ease: 'easeOut' } }}
-                  />
+                 alt={`Logo ${index}`} />
                 <motion.h3
                  initial={{ opacity: 0, }}
                  animate={{ opacity: 1}}

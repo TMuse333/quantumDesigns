@@ -121,14 +121,7 @@ animation: bounce 2s infinite;
     background-color:#005e7d ;
 }
 
-.bottom{
-    position: absolute;
-    top:0%;
-    left:5%;
-    gap:8rem;
-    
-    
-}
+.bot
 
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {

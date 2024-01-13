@@ -262,13 +262,7 @@ const expandStyle = {
                    setExpandHidden(true)
                   }}
               >
-                <motion.img src={design.image}
-                 style={{ width: '100px' }} 
-                 alt={`Logo ${index}`}
-                 initial={{ opacity: 0, }}
-                 animate={{ opacity: 1 }}
-                 exit={{ opacity: 0, transition: { duration: 0.4, ease: 'easeOut' } }}
-                  />
+                <img src={design.} style={{ width: '100px' }} alt={`Logo ${index}`} />
                 <motion.h3
                  initial={{ opacity: 0, }}
                  animate={{ opacity: 1}}
@@ -293,18 +287,11 @@ const expandStyle = {
                    setExpandHidden(true)
                   }}
               >
-                <motion.img
-                initial={{ opacity: 0, }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0, transition: { duration: 0.4, ease: 'easeOut' } }}
-                 src={performance.image} style={{ width: '100px' }} alt={`Logo ${index}`} />
+                <img src={logo} style={{ width: '100px' }} alt={`Logo ${index}`} />
                 <motion.h3
                  initial={{ opacity: 0, }}
                  animate={{ opacity: 1 }}
-                 exit={{ opacity: 0, transition: { duration: 0.4, ease: 'easeOut' } }}
-                 >
-                    {performance.name}
-                 </motion.h3>
+                 exit={{ opacity: 0, transition: { duration: 0.4, ease: 'easeOut' } }}>{performance.name}</motion.h3>
                 {expandedIndices.includes(index) && <p className="description-text">{performance.description}</p>}
               </div>
             ))}
