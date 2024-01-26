@@ -12,6 +12,8 @@
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@react-spring/parallax": "^9.7.3",
+    "@tsparticles/react": "^3.0.0",
+    "@tsparticles/slim": "^3.1.0",
     "bootstrap": "^5.3.2",
     "emailjs-com": "^3.2.0",
     "framer": "^2.4.1",

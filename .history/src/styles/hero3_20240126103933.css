@@ -1,0 +1,35 @@
+.hero3-container{
+    /* margin-top: 5rem; */
+  
+  background-repeat: no-repeat;
+  width:100vw;
+  background-size: cover;
+  /* background-position: 10% 50%;  */
+  /* background-image: url(src/images/no-bg-mountain.png); */
+  height:80vh;
+  position: relative;
+
+
+}
+
+
+.hero3-container img{
+
+    /* object-fit: cover;
+    height:500px;
+    width:100vw; */
+    /* transform: scale(0.5); */
+    /* height:80vw; */
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+
+
+
+@media screen and (min-width:655px){
+    .hero3-container{
+        /* background-position: 50% 50%;  */
+    }
+}

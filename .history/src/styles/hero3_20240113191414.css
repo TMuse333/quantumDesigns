@@ -1,0 +1,14 @@
+.hero3-container{
+    /* margin-top: 5rem; */
+  /* background-image: url(src/images/mountain.jpeg);
+  background-repeat: no-repeat;
+  width:100vw;
+  background-size: cover;
+  background-position: 30% 100%; */
+}
+
+@media screen and (min-width:655px){
+    .hero3-container{
+        height:100vh
+    }
+}
