@@ -186,8 +186,8 @@ const expandStyle = {
               }}
             />
           </div>
-          <InfographicBox1/>
-          {/* <motion.div
+          {/* <InfographicBox1/> */}
+          <motion.div
           key={activeDesignAdvantages ? 'design' : 'performance'}
             variants={textAnimation}
             initial="hidden"
@@ -200,7 +200,7 @@ const expandStyle = {
            
           >
             <p className="description-text">{activeDesignAdvantages ? designAdvantages.description : performanceAdvantages.description}</p>
-          </motion.div> */}
+          </motion.div>
         </div>
 
         <div className="scroll-down-indicator"

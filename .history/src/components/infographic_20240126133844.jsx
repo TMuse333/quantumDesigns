@@ -9,7 +9,6 @@ import { motion,AnimatePresence } from "framer-motion";
 import { designAdvantages, performanceAdvantages } from "../componentData/data";
 import abu from '../images/aboubacar-5-fire.png';
 import { FaArrowDown } from 'react-icons/fa';
-import InfographicBox1 from "./infographicBox1";
 // import '../styles/ScrollDownIndicator.css';
 
 const Infographic = () => {
@@ -186,7 +185,7 @@ const expandStyle = {
               }}
             />
           </div>
-          <InfographicBox1/>
+          <Info
           {/* <motion.div
           key={activeDesignAdvantages ? 'design' : 'performance'}
             variants={textAnimation}

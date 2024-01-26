@@ -186,7 +186,7 @@ const expandStyle = {
               }}
             />
           </div>
-          <InfographicBox1/>
+          {/* <InfographicBox1/> */}
           {/* <motion.div
           key={activeDesignAdvantages ? 'design' : 'performance'}
             variants={textAnimation}
