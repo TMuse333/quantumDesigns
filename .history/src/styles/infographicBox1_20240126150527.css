@@ -1,0 +1,16 @@
+.info-1-container {
+
+ margin-top: 3rem;
+ border-radius: 3rem;
+ width:90vw;
+  }
+
+
+  @media screen and (min-width:655px){
+    .info-1-container{
+        margin-right: 2rem;
+        width:40vw;
+        max-width: 420px;
+    }
+  }
+  
