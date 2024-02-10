@@ -15,8 +15,7 @@ import {
 } from "react-router-dom";
 
 import Overview from './components/overview/overview.jsx'
-import Portfolio from './components/portfolio/portfolio'
-import Infographic from'./components/infographic/infographic'
+
 
 
 

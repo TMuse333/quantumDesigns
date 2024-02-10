@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom'
 
 
 import './App.css'
-import Booking from './components/booking/booking'
+
 import Layout from './components/layouts/layout'
-import Testimonials from "./components/testimonials/testimonials"
+import Testimonials from "./components/testimonials/testimonials";
 import {
   BrowserRouter as Router,
 
@@ -14,13 +14,17 @@ import {
 
 } from "react-router-dom";
 
-import Overview from './components/overview/overview.jsx'
-import Portfolio from './components/portfolio/portfolio'
-import Infographic from'./components/infographic/infographic'
 
 
-
-
+import Portfolio from './components/portfolio'
+import Overview from './components/overview'
+import Services from './components/services'
+import ServiceOverview from './components/serviceOverview'
+import ParallaxLayout from './components/paralax'
+import Layout2 from './components/layouts/layout2'
+import Tenets from './components/tenets'
+import Infographic from './components/infographic'
+import Layout3 from './components/layouts/layout3'
 function App() {
   const [count, setCount] = useState(0)
 

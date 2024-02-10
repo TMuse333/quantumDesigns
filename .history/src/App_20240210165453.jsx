@@ -4,9 +4,10 @@ import { Link } from 'react-router-dom'
 
 
 import './App.css'
-import Booking from './components/booking/booking'
+
 import Layout from './components/layouts/layout'
-import Testimonials from "./components/testimonials/testimonials"
+import Testimonials from "./components/testimonials/testimonials";
+import Overview 
 import {
   BrowserRouter as Router,
 
@@ -14,9 +15,6 @@ import {
 
 } from "react-router-dom";
 
-import Overview from './components/overview/overview.jsx'
-import Portfolio from './components/portfolio/portfolio'
-import Infographic from'./components/infographic/infographic'
 
 
 
