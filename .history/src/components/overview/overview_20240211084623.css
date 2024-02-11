@@ -1,0 +1,25 @@
+.overview-container{
+    width:100vw;
+    background-color: var(--primary-color);
+    position: absolute;
+    top:60px;
+    left:0;
+}
+
+.overview-video{
+    width:90vw
+}
+
+#about-it{
+    object-fit: ;
+}
+
+
+@media screen and (min-width:655px){
+
+    .overview-video{
+        width:90vw;
+        max-width: 400px;
+    }
+
+}
