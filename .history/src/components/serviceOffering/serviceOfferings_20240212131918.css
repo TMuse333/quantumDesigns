@@ -22,14 +22,15 @@
     text-align: center;
 }
 
-
+.offered-service{
+   
+}
 
 .service-list{
     margin: 0 auto;
     padding:0.25rem 0.5rem;
     width: 50vw;
-   
-    margin-bottom: 1rem;
+    background: radial-gradient(circle at center, rgba(0, 153, 205, 0.7), rgba(48, 115, 160, 0.7));
    
 }
 
