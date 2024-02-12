@@ -122,7 +122,7 @@ portfolio[2].link = 'https://chic-tulumba-8df43a.netlify.app'
         <br />
         <button
         style={{
-          marginTop:'2rem'
+          margingTop:'1.'
         }}
           className="button work-link"
           key={currentIndex}

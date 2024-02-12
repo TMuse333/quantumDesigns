@@ -276,7 +276,7 @@ console.log(designAdvantages.image)
         <button className="button" onClick={() => setActiveAdvantage(0)}>
           Design
         </button>
-        <button className=" button" onClick={() => setActiveAdvantage(1)}>
+        <button className="dark-button button" onClick={() => setActiveAdvantage(1)}>
           Performance
         </button>
       </div>
