@@ -15,7 +15,7 @@ import Hero3 from "../herobanner3/herobanner3";
 import { useState } from "react";
 import ParticlesComponent from "../particles/particles";
 
-import q3 from '../../images/q3-visuals-logo-2-no-bg.png'
+import q3 from 'src/images/q3-visuals-logo-2-no-bg.png'
 const Layout = () => {
 
 
@@ -57,7 +57,7 @@ const links = [
             hasTilt={true}
             hasAnimation={true}
             {...content1}
-            image={q3}
+            image={content1.img}
              />
             <ServiceOffering />
             {/* <Content 

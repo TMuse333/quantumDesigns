@@ -141,11 +141,8 @@ const Infographic = () => {
     transition: 'all 0.3s ease-in'
   };
 
-  
-
   const advantages = [designAdvantages, performanceAdvantages];
-
-
+  
 
   return (
     <div className="infographic-container">

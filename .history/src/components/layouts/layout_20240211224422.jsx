@@ -57,7 +57,7 @@ const links = [
             hasTilt={true}
             hasAnimation={true}
             {...content1}
-            image={q3}
+            image={content1.img}
              />
             <ServiceOffering />
             {/* <Content 
