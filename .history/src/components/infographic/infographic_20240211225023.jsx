@@ -12,7 +12,6 @@ import { FaArrowDown } from 'react-icons/fa';
 import InfographicBox1 from "../infographicBox1/infographicBox1";
 import q3 from '../../images/q3-visuals-logo-2-no-bg.png'
 
-
 const Infographic = () => {
   const [isAnimated, setIsAnimated] = useState(false);
   const [expandedIndices, setExpandedIndices] = useState([]);
@@ -147,11 +146,7 @@ const Infographic = () => {
 
   const advantages = [designAdvantages, performanceAdvantages];
 
-  designAdvantages.image = q3
 
-  performanceAdvantages.image = abu
-
-console.log(designAdvantages.image)
 
   return (
     <div className="infographic-container">
@@ -249,7 +244,7 @@ console.log(designAdvantages.image)
               >
                 <motion.img
                 loading='lazy'
-                  src={advantages[activeAdvantage].image}
+                  src={advantage.image}
                   style={{ height: '100px' }}
                   alt={`Logo ${index}`}
                   initial={{ opacity: 0, }}

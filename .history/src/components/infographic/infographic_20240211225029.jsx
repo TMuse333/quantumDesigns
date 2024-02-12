@@ -11,7 +11,7 @@ import abu from '../../images/aboubacar-5-fire.png';
 import { FaArrowDown } from 'react-icons/fa';
 import InfographicBox1 from "../infographicBox1/infographicBox1";
 import q3 from '../../images/q3-visuals-logo-2-no-bg.png'
-
+import 
 
 const Infographic = () => {
   const [isAnimated, setIsAnimated] = useState(false);
@@ -147,11 +147,7 @@ const Infographic = () => {
 
   const advantages = [designAdvantages, performanceAdvantages];
 
-  designAdvantages.image = q3
 
-  performanceAdvantages.image = abu
-
-console.log(designAdvantages.image)
 
   return (
     <div className="infographic-container">
@@ -249,7 +245,7 @@ console.log(designAdvantages.image)
               >
                 <motion.img
                 loading='lazy'
-                  src={advantages[activeAdvantage].image}
+                  src={advantage.image}
                   style={{ height: '100px' }}
                   alt={`Logo ${index}`}
                   initial={{ opacity: 0, }}

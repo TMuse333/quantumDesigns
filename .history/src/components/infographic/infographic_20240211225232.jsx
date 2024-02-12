@@ -149,9 +149,7 @@ const Infographic = () => {
 
   designAdvantages.image = q3
 
-  performanceAdvantages.image = abu
 
-console.log(designAdvantages.image)
 
   return (
     <div className="infographic-container">
@@ -249,7 +247,7 @@ console.log(designAdvantages.image)
               >
                 <motion.img
                 loading='lazy'
-                  src={advantages[activeAdvantage].image}
+                  src={advantage.image}
                   style={{ height: '100px' }}
                   alt={`Logo ${index}`}
                   initial={{ opacity: 0, }}

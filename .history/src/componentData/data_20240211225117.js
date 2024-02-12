@@ -330,17 +330,17 @@ export const performanceAdvantages = {
     description: `React's state management system is efficient and helps in avoiding unnecessary re-renders. This means that your website updates only the components that need to be updated, saving valuable resources and further boosting performance.`,
   },
   {
-   
+    image:'../../images/aboubacar-5-fire.png',
     name: 'Virtual DOM and Fast Rendering',
     description: `React utilizes a Virtual DOM (Document Object Model) to efficiently update and render changes. It calculates the most efficient way to update the actual DOM, reducing unnecessary re-rendering and enhancing the website's overall speed. This approach ensures that your website feels snappy and responsive to user interactions.`,
   },
   {
-   
+    image:'../../images/aboubacar-5-fire.png',
     name: 'Optimized Bundle Sizes',
     description: `When it comes to file size, React offers tools and techniques for effective code splitting. You can dynamically load only the necessary parts of your application, reducing the initial download size. This results in faster loading times, even for users on slower internet connections.`,
   },
   {
-   
+    image:'../../images/aboubacar-5-fire.png',
     name: 'SEO-Friendly Single Page Applications (SPA)',
     description: `React enables the creation of Single Page Applications, which can be highly beneficial for SEO. With server-side rendering (SSR) and tools like Next.js, you can ensure that search engines easily index your content, improving your website's visibility.`,
   },

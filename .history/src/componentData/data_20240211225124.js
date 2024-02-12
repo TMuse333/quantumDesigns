@@ -340,7 +340,7 @@ export const performanceAdvantages = {
     description: `When it comes to file size, React offers tools and techniques for effective code splitting. You can dynamically load only the necessary parts of your application, reducing the initial download size. This results in faster loading times, even for users on slower internet connections.`,
   },
   {
-   
+    image:'../../images/aboubacar-5-fire.png',
     name: 'SEO-Friendly Single Page Applications (SPA)',
     description: `React enables the creation of Single Page Applications, which can be highly beneficial for SEO. With server-side rendering (SSR) and tools like Next.js, you can ensure that search engines easily index your content, improving your website's visibility.`,
   },

@@ -291,7 +291,7 @@ export const designAdvantages = {
       description: `React's efficient state management ensures a seamless and predictable user interface. With features like hooks and context API, handling and updating application state becomes intuitive and streamlined.`,
     },
     {
-     
+      image:'../../images/q3-visuals-logo-2-no-bg.png',
       name: 'Reusable Components',
       description: `Leverage React's component-based architecture to create reusable and modular UI elements. This not only accelerates development but also maintains consistency and ease of maintenance across your application.`,
     },
@@ -303,7 +303,7 @@ export const designAdvantages = {
 
 export const performanceAdvantages = {
 
-
+  image:'../../images/aboubacar-5-fire.png',
 
   description: `
   With full control over the process of creating the website,
@@ -315,32 +315,32 @@ export const performanceAdvantages = {
   points:[
 
   
-  {
+  { image:'../../images/aboubacar-5-fire.png',
     name: 'Granular Control',
     description: `One of the primary advantages of using ReactJS is the granular control it provides over the building blocks of your website. Unlike traditional templates, React enables you to create modular components. Each component serves a specific purpose and can be optimized individually, allowing for targeted improvements.`,
   },
   {
-  
+    image:'../../images/aboubacar-5-fire.png',
     name: 'Lazy Loading',
     description: `Imagine your website has a multitude of images, videos, and other resources. With React, you can implement lazy loading effortlessly. This means that resources are loaded only when they are needed, reducing the initial load time and enhancing the overall speed of your website. Users get a faster, more responsive experience without sacrificing content.`,
   },
   {
-    
+    image:'../../images/aboubacar-5-fire.png',
     name: 'Efficient State Management',
     description: `React's state management system is efficient and helps in avoiding unnecessary re-renders. This means that your website updates only the components that need to be updated, saving valuable resources and further boosting performance.`,
   },
   {
-   
+    image:'../../images/aboubacar-5-fire.png',
     name: 'Virtual DOM and Fast Rendering',
     description: `React utilizes a Virtual DOM (Document Object Model) to efficiently update and render changes. It calculates the most efficient way to update the actual DOM, reducing unnecessary re-rendering and enhancing the website's overall speed. This approach ensures that your website feels snappy and responsive to user interactions.`,
   },
   {
-   
+    image:'../../images/aboubacar-5-fire.png',
     name: 'Optimized Bundle Sizes',
     description: `When it comes to file size, React offers tools and techniques for effective code splitting. You can dynamically load only the necessary parts of your application, reducing the initial download size. This results in faster loading times, even for users on slower internet connections.`,
   },
   {
-   
+    image:'../../images/aboubacar-5-fire.png',
     name: 'SEO-Friendly Single Page Applications (SPA)',
     description: `React enables the creation of Single Page Applications, which can be highly beneficial for SEO. With server-side rendering (SSR) and tools like Next.js, you can ensure that search engines easily index your content, improving your website's visibility.`,
   },
