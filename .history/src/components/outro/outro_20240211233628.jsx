@@ -13,11 +13,7 @@ const Outro = ({title, content, button}) => {
             <div className="outro-text-box">
 
 
-            <h2 className="title-text"
-            style={{
-                padding:'0 0.5rem'
-            }}
-            >
+            <h2 className="title-text">
                 Transform Your Vision Today
                 </h2>
             <p className='description-text content2-text'>

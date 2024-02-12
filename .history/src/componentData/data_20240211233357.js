@@ -248,8 +248,8 @@ export const tenetsContent = tenetsData.map((tenet, index) => (
 export const serviceOfferings = [
   'Extremely Customizable',
   'Optimized Performance',
-  'Very Reusable and Quick Assemble',
-  'They Look Amazing'
+  'Very Reusable and Quick to put together',
+  'They look amazing'
 ]
 
 

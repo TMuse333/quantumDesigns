@@ -13,12 +13,8 @@ const Outro = ({title, content, button}) => {
             <div className="outro-text-box">
 
 
-            <h2 className="title-text"
-            style={{
-                padding:'0 0.5rem'
-            }}
-            >
-                Transform Your Vision Today
+            <h2 className="title-text">
+                Transform our vision today
                 </h2>
             <p className='description-text content2-text'>
 Websites are becoming more and more important everyday. With so many of websites out there you need one that stands out to
