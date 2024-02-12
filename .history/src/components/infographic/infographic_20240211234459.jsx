@@ -40,7 +40,7 @@ const Infographic = () => {
     },
     {
       dest:'/booking',
-      name:'Contact'
+      name:'contact'
     }
 ]
 
