@@ -108,32 +108,32 @@ portfolio[2].link = 'https://chic-tulumba-8df43a.netlify.app'
         />
        
 
-       <div className="work-description">
-  <AnimatePresence>
-    <motion.p
-      key={currentIndex}
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1, transition: { delay: 0.7 } }}
-      exit={{ transition: 'all 0.3s ease-in', opacity: 0 }}
-      className="description-text"
-    >
-      <Link to={portfolio[currentIndex].link}>
-        {portfolio[currentIndex].description}
-        <br />
-        <button
-          className="button work-link"
-          key={currentIndex}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1, transition: { delay: 0.7 } }}
-          exit={{ transition: 'all 0.3s ease-in', opacity: 0 }}
-        >
-          View
-        </button>
-      </Link>
-    </motion.p>
-  </AnimatePresence>
-</div>
-
+        <div className="work-description">
+          <AnimatePresence>
+            <motion.p
+              key={currentIndex}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1, transition: { delay: 0.7 } }}
+              exit={{ transition: 'all 0.3s ease-in', opacity: 0 }}
+              className="description-text"
+            >
+              {portfolio[currentIndex].description}
+              <br />
+              <button className="button work-link"
+              key={currentIndex}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1, transition: { delay: 0.7 } }}
+              exit={{ transition: 'all 0.3s ease-in', opacity: 0 }}
+             >
+               
+                  
+                >
+                  View
+                </motion.a>
+              </button>
+            </motion.p>
+          </AnimatePresence>
+        </div>
        
       </div>
     </div>
