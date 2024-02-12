@@ -19,7 +19,7 @@
 }
 
 .service-list li{
-    text-align: center;
+    text-align: left;
 }
 
 .line{
@@ -94,9 +94,7 @@
         width:100vw;
     }
 
-    .service-list li{
-        text-align: center;
-    }
+    
 
     .service-overview-list li{
         margin-bottom: 1rem;
