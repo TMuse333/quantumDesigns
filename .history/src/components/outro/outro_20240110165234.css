@@ -1,7 +1,7 @@
 .outro-container{
     width: 100vw;
 
-    background-image: url(../../images/goku-vs-jiren.jpg);
+    background-image: url(src/images/goku-vs-jiren.jpg);
     /* background-image: url(src/images/dark-q3v-logo.jpg); */
     /* height:90vw; */
  display: flex;
