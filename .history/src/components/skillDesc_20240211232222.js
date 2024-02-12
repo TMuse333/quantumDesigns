@@ -57,7 +57,7 @@ export const portfolio = [
     description:'This is a digital version of a resume made for Thomas Musial, '+
     'We can create personalized digital resumes to help you '+
     'stand out from the competition and highlight how great of a person you really are.',
-
+q
   },
   {
     name:'The Quantum Card Game',

@@ -9,7 +9,7 @@
  background-repeat: no-repeat;
  background-size: cover; 
  /*cover usually works*/
- background-position:33% top;  
+ background-position:60 top;  
 
  position: relative;
 
@@ -54,7 +54,6 @@ margin-top: 2rem;
 @media screen and (min-width:655px) {
     .outro-container{
         text-align: left;
-        background-position: center top;
       /* margin-top: 20rem; */
     }
 

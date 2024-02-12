@@ -20,11 +20,11 @@ const Overview = () => {
         },
         {
             dest:'/why-us',
-            name:'Why Q3 '
+            name:'Why Q3 Creations'
         },
         {
-            dest:'booking',
-            name: 'Contact'
+            dest:'booki',
+            name: 'About Us'
         }
     ]
 

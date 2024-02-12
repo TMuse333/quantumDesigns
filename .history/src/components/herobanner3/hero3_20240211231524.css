@@ -44,7 +44,7 @@ margin-right: auto;
 
 .hero-contents h2{
     font-size: 1.3rem;
-  
+    width: fit-content;
     transform: translateY(-2rem);
 }
 

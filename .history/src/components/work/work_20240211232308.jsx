@@ -42,8 +42,7 @@ const images = [
 
 
 portfolio[0].link = 'https://saineymedia.com'
-portfolio[1].link =  'https://thomasmusial.com'
-portfolio[2].link = 'https://chic-tulumba-8df43a.netlify.app'
+portfolio[1].link =     // link:'https://thomasmusial.com'
 
 
   const handleSlide = (index) => {
