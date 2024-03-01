@@ -16,7 +16,7 @@ import { useState } from "react";
 import ParticlesComponent from "../particles/particles";
 
 import q3 from '../../images/q3-visuals-logo-2-no-bg.png'
-import striker from '../../images/quantum-striker-pose.png'
+import striker from 'src/images/quantum-striker-pose.png'
 const Layout = () => {
 
 
@@ -58,8 +58,7 @@ const links = [
             hasTilt={true}
             hasAnimation={true}
             {...content1}
-            image={striker}
-            imageId='striker'
+            image={q3}
              />
             <ServiceOffering />
             {/* <Content 

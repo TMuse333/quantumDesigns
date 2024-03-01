@@ -13,12 +13,12 @@ const Hero3 = () => {
 
         
             <h1 className="title-text">
-                Digital Purity Designs
+                Digital Purity
             </h1>
             <Sphere size={2} position={{ x: 0, y: 0, z: 0 }} color={0x0000ff} />
 
             <h2 className="title-text">
-               Digital Designs in their purest form
+                Unleashing creativity with scientific precision
             </h2>
             <Link to='why-us'>
 

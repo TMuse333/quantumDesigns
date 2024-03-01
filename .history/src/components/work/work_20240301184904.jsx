@@ -10,7 +10,6 @@ import { portfolio } from "../skillDesc";
 import { motion, AnimatePresence } from "framer-motion";
 import sainey from '../../images/sainey-media-picture.png'
 import portfolio2 from '../../images/portfolio2-screenshot.png'
-import card2 from '../../images/card-game2-screenshot.png'
 // import { Carousel } from 'react-bootstrap';
 
 
@@ -30,13 +29,13 @@ const images = [
     thumbnail:sainey
   },
   {
-    original: portfolio2,
-    thumbnail: portfolio2,
+    original: portfolio,
+    thumbnail: portfolio,
 
   },
   {
-    original: card2,
-    thumbnail: card2,
+    original: card,
+    thumbnail: card,
   
   },
   // Add more images as needed
@@ -45,7 +44,7 @@ const images = [
 
 portfolio[0].link = 'https://saineymedia.com'
 portfolio[1].link =  'https://thomasmusial.netlify.app'
-portfolio[2].link = 'https://quantumcardgame.netlify.app'
+portfolio[2].link = 'https://chic-tulumba-8df43a.netlify.app'
 
 
   const handleSlide = (index) => {

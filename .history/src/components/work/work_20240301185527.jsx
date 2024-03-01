@@ -35,8 +35,8 @@ const images = [
 
   },
   {
-    original: card2,
-    thumbnail: card2,
+    original: card,
+    thumbnail: card,
   
   },
   // Add more images as needed

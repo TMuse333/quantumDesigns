@@ -18,7 +18,7 @@ const Hero3 = () => {
             <Sphere size={2} position={{ x: 0, y: 0, z: 0 }} color={0x0000ff} />
 
             <h2 className="title-text">
-               Digital Designs in their purest form
+               D
             </h2>
             <Link to='why-us'>
 

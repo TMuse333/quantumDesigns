@@ -11,7 +11,7 @@ import abu from '../../images/aboubacar-5-fire.png';
 import { FaArrowDown } from 'react-icons/fa';
 import InfographicBox1 from "../infographicBox1/infographicBox1";
 import q3 from '../../images/q3-visuals-logo-2-no-bg.png'
-import striker from "../../images/quantum striker pose.png"
+import striker from "../images/quantum striker pose.png"
 
 
 
@@ -151,7 +151,7 @@ const Infographic = () => {
 
   designAdvantages.image = q3
 
-  performanceAdvantages.image = striker
+  performanceAdvantages.image = abu
 
 console.log(designAdvantages.image)
 

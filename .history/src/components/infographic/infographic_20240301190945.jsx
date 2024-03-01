@@ -151,7 +151,7 @@ const Infographic = () => {
 
   designAdvantages.image = q3
 
-  performanceAdvantages.image = striker
+  performanceAdvantages.image = abu
 
 console.log(designAdvantages.image)
 
