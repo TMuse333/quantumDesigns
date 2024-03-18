@@ -1,0 +1,15 @@
+.rotating-box{
+    position: relative;
+    /* background-color: aqua; */
+    background-color: #00bfff;
+}
+
+.rotating-box img{
+    position: absolute;
+    top:0;
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    left:50%;
+    transform: translateX(-50%);
+}
