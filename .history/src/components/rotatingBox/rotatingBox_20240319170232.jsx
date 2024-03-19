@@ -49,14 +49,14 @@ const Example = ({ image, id, imageId }) => {
       width: rotationComplete ? width : '10vw',
       maxWidth: '760px',
       maxHeight: '400px',
-      transition:{
-        height:{
-            delay:0.75
-        },
-        width:{
-            delay:0.75
-        }
-      }
+    //   transition:{
+    //     height:{
+    //         delay:0.75
+    //     },
+    //     width:{
+    //         delay:0.75
+    //     }
+    //   }
     
     },
   };
@@ -68,7 +68,7 @@ const Example = ({ image, id, imageId }) => {
   useEffect(() => {
     if (inView) {
       // Start the animation when the element is in view
-      imageControls.start({ opacity: 1, transition: { delay: 0.75 } });
+      imageControls.start({ opacity: 1, transition: { delay: 75 } });
       setRotationComplete(true);
     }
   }, [inView]);

@@ -13,7 +13,7 @@ const Experiments = () => {
     return (
         <div className="experiments-container">
             {/* <AuroraHero/> */}
-            {/* <BorderAnimation/> */}
+            <BorderAnimation/>
             <Preview/>
             {/* <Example/>
            <Content

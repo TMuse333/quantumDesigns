@@ -54,7 +54,7 @@ const Example = ({ image, id, imageId }) => {
             delay:0.75
         },
         width:{
-            delay:0.75
+            delay:0.5
         }
       }
     
@@ -68,7 +68,7 @@ const Example = ({ image, id, imageId }) => {
   useEffect(() => {
     if (inView) {
       // Start the animation when the element is in view
-      imageControls.start({ opacity: 1, transition: { delay: 0.75 } });
+      imageControls.start({ opacity: 1, transition: { delay: 175 } });
       setRotationComplete(true);
     }
   }, [inView]);

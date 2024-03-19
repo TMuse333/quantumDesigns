@@ -49,14 +49,14 @@ const Example = ({ image, id, imageId }) => {
       width: rotationComplete ? width : '10vw',
       maxWidth: '760px',
       maxHeight: '400px',
-      transition:{
-        height:{
-            delay:0.75
-        },
-        width:{
-            delay:0.75
-        }
-      }
+    //   transition:{
+    //     height:{
+    //         delay:0.75
+    //     },
+    //     width:{
+    //         delay:0.75
+    //     }
+    //   }
     
     },
   };

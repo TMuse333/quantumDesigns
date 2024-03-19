@@ -13,10 +13,10 @@ const Experiments = () => {
     return (
         <div className="experiments-container">
             {/* <AuroraHero/> */}
-            {/* <BorderAnimation/> */}
-            <Preview/>
-            {/* <Example/>
-           <Content
+            <BorderAnimation/>
+            {/* <Preview/> */}
+            <Example/>
+           {/* <Content
            id='rotating-content'
            rotatingImage={true}
            image={q3}
