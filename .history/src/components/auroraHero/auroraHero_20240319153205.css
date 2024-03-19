@@ -1,0 +1,22 @@
+.aurora-hero-container{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(125% 125%
+    at 50% 0%, #020617 50%,#DD335C);
+    height:100vh;
+    flex-direction: column;
+    margin: 0 auto;
+    position: absolute;
+    top:0;
+    left:0;
+    color:#011117
+    
+}
+
+.aurora-hero-container h1{
+    width:85vw;
+
+}
+
