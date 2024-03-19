@@ -1,0 +1,27 @@
+import React from "react";
+import bottom from '../../images/bottom-mountain.png'
+import top from '../../images/top-mountain.png'
+import './mountainParallax.css'
+
+const MountainParallax = () => {
+    return (
+        <div className="mountain-parallax-container">
+            slat
+            <div className="mountai"
+                style={{
+                    backgroundImage: `url(${top})`,
+                    backgroundPosition: 'bottom',
+                }}
+            />
+            <div
+                style={{
+                    backgroundImage: `url(${bottom})`,
+                    backgroundPosition: 'bottom',
+                    backgroundSize: 'cover'
+                }}
+            />
+        </div>
+    )
+}
+
+export default MountainParallax

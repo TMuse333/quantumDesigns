@@ -1,0 +1,46 @@
+.mountain-parallax-container{
+    width:100vw;
+    position: relative;
+    /* overflow: hidden;
+    inset: 0; */
+    height: 100vh;
+   /* background-color: blue; */
+   /* overflow: hidden; */
+   display: grid;
+  
+}
+
+.full-mountain{
+    background-image: url(../../images/no-bg-mountain.png);
+    position: absolute;
+    top:0;
+    left:-30%;
+    /* left:0; */
+    bottom:0;
+    right:0%;
+    /* background-position: 50% 30%; */
+    background-position: bottom;
+    /* background-size: auto 750px; */
+     background-repeat: no-repeat;
+    /* background-position: 50% 30%;  */
+    /* background-size: cover; */
+}
+
+.bottom-mountain{
+    background-image: url(../../images/bottom-mountain.png);
+    position: absolute;
+    top:0;
+    left:-30%;
+    bottom:0;
+    right:0%;
+    background-position: 50% 30%;
+    background-repeat: no-repeat;
+}
+
+@media screen and(min-height:700px){
+    .full-mountain{
+        height:1150px;
+        background-size: auto 1150px;
+    }
+}
+

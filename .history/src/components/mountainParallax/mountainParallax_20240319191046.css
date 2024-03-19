@@ -1,0 +1,16 @@
+.mountain-parallax-container{
+    width:100vw;
+    position: relative;
+    /* overflow: hidden;
+    inset: 0; */
+    height: 100vh;
+   /* background-color: blue; */
+  
+}
+
+.full-mountain{
+    background-image: url(../../images/no-bg-mountain.png);
+    position: absolute;
+    
+}
+
