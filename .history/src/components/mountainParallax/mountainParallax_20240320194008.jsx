@@ -35,9 +35,6 @@ const MountainParallax = () => {
             <motion.div className="parallax-text" style={{ y: textY, opacity: textOpacity, display: isVisible ? 'block' : 'none' }}>
                 <motion.h1>Q3 Designs</motion.h1>
                 <motion.h2>
-                Elevating your digital presence
-               with custom web solutions
-                </motion.h2>
             </motion.div>
 
             <motion.div className="full-mountain" style={{ y: backgroundY }}></motion.div>

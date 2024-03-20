@@ -11,9 +11,7 @@
 }
 
 .parallax-text{
-position: relative;
-z-index: 1;
-margin-top: 8rem;
+
 }
 
 .full-mountain{
@@ -42,7 +40,6 @@ margin-top: 8rem;
     right:0%;
     background-position: 50% 30%;
     background-repeat: no-repeat;
-    z-index: 2;
 }
 
 /* @media screen and(min-height:700px){
