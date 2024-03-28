@@ -42,12 +42,5 @@
   }
 
   
-  @media only screen and (min-width: 642px) and (max-height: 320px) {
-    /* Your CSS styles for devices with a viewport size of 762px by 320px */
-
-    .aurora-hero-container{
-      height: 200vh;
-    }
-  }
   
 

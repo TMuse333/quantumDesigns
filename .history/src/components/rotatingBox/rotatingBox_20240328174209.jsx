@@ -1,41 +1,36 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion, useMotionValue, useTransform, useAnimation } from 'framer-motion';
 import q3 from '../../images/q3-visuals-logo-2-no-bg.png';
 import './rotatingbox.css';
-import { useInView } from 'react-intersection-observer';
 
 const Example = ({ image, id, imageId }) => {
   const [rotationComplete, setRotationComplete] = useState(false); // State variable to track rotation completion
-  const [ref, inView] = useInView({
-    threshold: 1,
-    triggerOnce:true
-  });
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 865)
-
+  const ref = useRef(null);
+  const isMobile = window.innerWidth < 865;
 
   useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth >= 865) {
-        setIsMobile(false);
-      } else {
-        setIsMobile(true);
+    const handleScroll = () => {
+      const element = ref.current;
+      if (!element) return;
+
+      const rect = element.getBoundingClientRect();
+      const threshold = isMobile ? 0.5 : 0.8; // Adjust threshold as needed
+
+      if (rect.top < window.innerHeight * threshold) {
+        setRotationComplete(true);
       }
     };
-  
-    handleResize(); // Call handleResize initially to set the initial state based on window width
-  
-    // Add event listener to handle window resize events
-    window.addEventListener('resize', handleResize);
-  
-    // Remove event listener when the component unmounts to prevent memory leaks
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Initial check when the component mounts
+
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []); // Empty dependency array ensures that this effect runs only once after the component mounts
 
-  const width = isMobile ? '90vw' : '48vw'
-
-  const height = isMobile ? '60vw' : '58vw'
+  const width = isMobile ? '90vw' : '48vw';
+  const height = isMobile ? '60vw' : '58vw';
 
   const blockVariants = {
     initial: {
@@ -57,7 +52,6 @@ const Example = ({ image, id, imageId }) => {
             delay:0.75
         }
       }
-    
     },
   };
 
@@ -66,12 +60,11 @@ const Example = ({ image, id, imageId }) => {
   const imageControls = useAnimation();
 
   useEffect(() => {
-    if (inView) {
+    if (rotationComplete) {
       // Start the animation when the element is in view
       imageControls.start({ opacity: 1, transition: { delay: 0.75 } });
-      setRotationComplete(true);
     }
-  }, [inView]);
+  }, [rotationComplete]);
 
   return (
     <motion.div
@@ -85,7 +78,7 @@ const Example = ({ image, id, imageId }) => {
       }}
       variants={blockVariants}
       initial='initial'
-      animate={inView ? 'target' : 'initial'} // Start animation only when in view
+      animate='target'
       transition={{
         ease: 'easeInOut',
         duration: 1,

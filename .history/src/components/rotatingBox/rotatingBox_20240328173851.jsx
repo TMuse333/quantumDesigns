@@ -7,7 +7,7 @@ import { useInView } from 'react-intersection-observer';
 const Example = ({ image, id, imageId }) => {
   const [rotationComplete, setRotationComplete] = useState(false); // State variable to track rotation completion
   const [ref, inView] = useInView({
-    threshold: 1,
+    threshold: 0.9,
     triggerOnce:true
   });
   const [isMobile, setIsMobile] = useState(window.innerWidth < 865)

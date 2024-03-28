@@ -46,7 +46,7 @@
     /* Your CSS styles for devices with a viewport size of 762px by 320px */
 
     .aurora-hero-container{
-      height: 200vh;
+      /* height: 200vh; */
     }
   }
   

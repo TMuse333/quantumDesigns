@@ -3,7 +3,7 @@ import { motion, useMotionTemplate, useMotionValue,
 animate } from "framer-motion";
 import './auroraHero.css'
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
+
 const colors = [
     "#0080ff", // Slightly darker shade of blue
     "#00ccff", // Lighter shade of blue
@@ -57,8 +57,6 @@ A great website can be the difference between your business thriving and having 
        
        
        
-<Link to='booking'>
-
 
         <motion.button
         whileHover={{
@@ -71,9 +69,8 @@ A great website can be the difference between your business thriving and having 
             border,
             boxShadow
         }}>
-            Transform Your Vision Today
+            Click Me
         </motion.button>
-        </Link>
         </div>
 {/* salt */}
     </motion.section>
