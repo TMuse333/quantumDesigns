@@ -40,8 +40,7 @@ const links = [
         name:'About Us'
     },
     {
-        dest:'https://ab7882-2.myshopify.com',
-        name:'Shop'
+        dest:
     }
 ]
 

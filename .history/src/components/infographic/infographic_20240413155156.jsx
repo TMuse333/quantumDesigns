@@ -44,10 +44,7 @@ const Infographic = () => {
       dest:'/booking',
       name:'Contact'
     },
-    {
-      dest:'https://ab7882-2.myshopify.com',
-      name:'Shop'
-  }
+    
 ]
 
   useEffect(() => {
