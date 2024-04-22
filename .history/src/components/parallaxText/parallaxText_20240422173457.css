@@ -1,0 +1,152 @@
+/* Styles for TextParallaxContentExample component */
+.bg-white {
+    background-color: #fff;
+  }
+  
+  /* Styles for TextParallaxContent component */
+  .TextParallaxContent {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  
+  .relative {
+    position: relative;
+  }
+  
+  .h-150vh {
+    height: 150vh;
+  }
+  
+  .sticky {
+    position: sticky;
+    z-index: 0;
+    overflow: hidden;
+    border-radius: 1.5rem;
+  }
+  
+  .rounded-3xl {
+    border-radius: 1rem;
+  }
+  
+  /* Styles for StickyImage component */
+  .sticky-image {
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .absolute {
+    position: absolute;
+  }
+  
+  .inset-0 {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .bg-neutral-950-70 {
+    background-color: rgba(47, 53, 66, 0.7);
+  }
+  
+  /* Styles for OverlayCopy component */
+  .overlay-copy {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+  }
+  
+  /* Additional styles for ExampleContent component */
+  .grid {
+    display: grid;
+  }
+  
+  .max-w-5xl {
+    max-width: 72rem;
+  }
+  
+  .grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  
+  .gap-8 {
+    gap: 2rem;
+  }
+  
+  .px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .pb-24 {
+    padding-bottom: 6rem;
+  }
+  
+  .pt-12 {
+    padding-top: 3rem;
+  }
+  
+  .grid-cols-12 {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+  
+  .col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+  
+  .col-span-4 {
+    grid-column: span 4 / span 4;
+  }
+  
+  .col-span-8 {
+    grid-column: span 8 / span 8;
+  }
+  
+  .text-3xl {
+    font-size: 1.875rem;
+  }
+  
+  .font-bold {
+    font-weight: 700;
+  }
+  
+  .text-xl {
+    font-size: 1.25rem;
+  }
+  
+  .mb-2 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .mb-4 {
+    margin-bottom: 1rem;
+  }
+  
+  .mb-8 {
+    margin-bottom: 2rem;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .p-9 {
+    padding: 2.25rem;
+  }
+  
+  .py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+  .text-white {
+    color: #fff;
+  }
+  
+  .hover\:bg-neutral-700:hover {
+    background-color: #4a5568;
+  }
+  

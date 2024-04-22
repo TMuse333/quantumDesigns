@@ -1,0 +1,7 @@
+.sticky-intro-container{
+    background-image: url(src/images/q3-imac.jpg);
+    position: sticky;
+    /* height:100vh; */
+    z-index: 5;
+    /* margin-top: 25rem; */
+}
