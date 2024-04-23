@@ -1,0 +1,16 @@
+.sticky-intro-container{
+    background-image: url(src/images/q3-imac.jpg);
+    /* position: sticky; */
+    height:100vh;
+    width:100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: 5;
+    /* max-width: 1200px; */
+    margin:0 auto;
+    padding-top: 3rem;
+    /* padding-left: 3rem; */
+    /* margin-top: 5rem; */
+    /* margin-top: 25rem; */
+}

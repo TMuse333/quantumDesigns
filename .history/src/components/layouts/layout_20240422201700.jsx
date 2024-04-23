@@ -65,16 +65,16 @@ const links = [
 
             <MountainParallax/>
 
-            {/* <StickyIntro/> */}
+            <StickyIntro/>
 
 
           
             <Content
             id='content1'
             {...content1}
-            // rotatingImage={true}
+            rotatingImage={true}
             image={ai}
-            // imageId='striker'
+            imageId='striker'
             />
 
             <ServiceOffering />

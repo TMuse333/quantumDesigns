@@ -11,7 +11,7 @@
     /* max-width: 1200px; */
 
     padding-top: 3rem;
-    background-color: rgb(5, 9, 19);
+    background-color: black;
   
 }
 
@@ -23,6 +23,5 @@
     background-position: center center;
     background-image: url(src/images/q3-imac.jpg);
     margin:0 auto;
-    max-width: 1200px;
 }
 

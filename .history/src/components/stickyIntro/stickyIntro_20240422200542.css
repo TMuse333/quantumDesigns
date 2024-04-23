@@ -9,9 +9,9 @@
     background-position: center center;
     z-index: 5;
     /* max-width: 1200px; */
-
+    margin:0 auto;
     padding-top: 3rem;
-    background-color: rgb(5, 9, 19);
+    background-color: black;
   
 }
 
@@ -22,7 +22,5 @@
     background-size: cover;
     background-position: center center;
     background-image: url(src/images/q3-imac.jpg);
-    margin:0 auto;
-    max-width: 1200px;
 }
 

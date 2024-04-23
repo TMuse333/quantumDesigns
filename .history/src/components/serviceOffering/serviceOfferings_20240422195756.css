@@ -76,7 +76,7 @@
 
 .offered-service {
    background-image: url(src/images/q3-imac.jpg);
-    background-image: url(src/images/dark-react.png);
+    /* background-image: url(src/images/dark-react.png); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
