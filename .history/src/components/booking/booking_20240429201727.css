@@ -1,5 +1,5 @@
 .booking-container{
-    background-image: url(src/images/quantum-realm.png);
+    background-image: url(../../images/quantum-realm.png);
     width:100vw;
     position: absolute;
     top:0px;
@@ -94,6 +94,14 @@ opacity: 1;
     display: none;
 }
 
+.pad3{
+    background: radial-gradient(circle at center, rgba(0, 153, 205, 0.7), rgba(48, 115, 160, 0.7));
+    border-radius: 2rem;
+    padding:1rem;
+    font-family: 
+    'Palatino Sans', 'Palatino Sans Informal', 'Palatino Sans Text', 'Palatino Sans W1G', 'Palatino Sans W01',sans-serif;
+}
+
 @media screen and (min-width:500px){
     .booking-container{
         padding-top: 0;
@@ -125,6 +133,7 @@ opacity: 1;
 
     .booking-container{
         height: 100vh;;
+         
     }
 
     
@@ -185,6 +194,7 @@ max-width: 500px;
         font-family: 
         'Palatino Sans', 'Palatino Sans Informal', 'Palatino Sans Text', 'Palatino Sans W1G', 'Palatino Sans W01',sans-serif;
   font-weight: 400;
+  background: radial-gradient(circle at center, rgba(0, 153, 205, 0.7), rgba(48, 115, 160, 0.7));
         /* text-align: left; */
     }
 
@@ -198,11 +208,14 @@ max-width: 500px;
     }
 
     .pad3{
-        padding-left: 3rem;
-        font-family: 
-        'Palatino Sans', 'Palatino Sans Informal', 'Palatino Sans Text', 'Palatino Sans W1G', 'Palatino Sans W01',sans-serif;
-  font-weight: 400;
   
+       
+  font-weight: 550;
+  margin-top: 2rem;
+  background: radial-gradient(circle at center, rgba(0, 153, 205, 0.7), rgba(48, 115, 160, 0.7));
+  border-radius: 2rem;
+  padding:1rem;
+  margin-left: 2rem;
     }
 
     .info-box-container input{
