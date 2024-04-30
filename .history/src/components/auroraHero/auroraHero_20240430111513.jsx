@@ -50,6 +50,7 @@ return (
 Websites are becoming more and more important everyday. With so many of websites out there you need one that stands out to attraction attention but simple enough for a effortless user experience.  </p>
 
 
+<br/>
 
 <p className="description-text">
 A great website can be the difference between your business thriving and having no one take you seriously. Would you trust someone with a non professional website or who doesn't even have one? Q3 Designs will take care of all these problems for you and deliver a fantastic website to turn your vision into reality.   </p>
