@@ -10,9 +10,11 @@ import { designAdvantages, performanceAdvantages } from "../../componentData/dat
 import abu from '../../images/aboubacar-5-fire.png';
 import { FaArrowDown } from 'react-icons/fa';
 import InfographicBox1 from "../infographicBox1/infographicBox1";
-
+import q3 from '../../images/q3-visuals-logo-2-no-bg.png'
+import striker from "../../images/quantum striker pose.png"
 import ball from '../../images/futuristic-money-ball-removebg-preview.png'
-import brain from '../../images/Gemini_Generated_Image_7x676t7x676t7x67-removebg-preview.png'
+
+
 const Infographic = () => {
   const [isAnimated, setIsAnimated] = useState(false);
   const [expandedIndices, setExpandedIndices] = useState([]);
@@ -151,11 +153,11 @@ const Infographic = () => {
 
   const advantages = [designAdvantages, performanceAdvantages];
 
-  designAdvantages.image = ball
+  designAdvantages.image = q3
 
-  performanceAdvantages.image = brain
+  performanceAdvantages.image = striker
 
-
+console.log(designAdvantages.image)
 
   return (
     <div className="infographic-container">
